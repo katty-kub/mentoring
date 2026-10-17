@@ -1,0 +1,6 @@
+# Agent working files (specs, plans, tasks, scratch)
+.tasks/
+
+# Personal Claude Code overrides
+CLAUDE.local.md
+.claude/settings.local.json
