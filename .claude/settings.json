@@ -1,0 +1,11 @@
+{
+  "outputStyle": "Tutor",
+  "permissions": {
+    "deny": [
+      "Edit(curriculum/**/task.js)",
+      "Write(curriculum/**/task.js)",
+      "Edit(curriculum/**/SUMMARY.md)",
+      "Write(curriculum/**/SUMMARY.md)"
+    ]
+  }
+}
