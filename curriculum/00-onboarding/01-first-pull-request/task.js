@@ -17,18 +17,18 @@
 // so others can review it.
 
 // TODO (step 3): print your name
-
+console.log("Ahoj, jsem Katy.");
 // TODO (step 3): print why you're learning to program
-
+ console.log("Baví mě tvořit vlastní aplikace a učit se, jak věci v kódu fungují.");
 // TODO (step 3): print one thing you want to build in three months
-
+console.log("Chci vytvořit vlastní aplikaci a učit se při tom programovat.");
 // --- Questions: answer under each one ---
 
 // 1. In your words: what is a branch, a commit, a pull request?
-// Answer:
+// Answer:Větev je oddělená pracovní linie, commit uložené změny a pull request žádost o kontrolu a sloučení.
 
 // 2. Why stage files by name, not "everything"?
-// Answer:
+// Answer:Přidávám jen task.js, aby se do commitu nedostaly jiné nechtěné změny.
 
 // 3. Read README.md. Which of your five goals matters most right now? Why?
-// Answer:
+// Answer:Nejdůležitější je pro mě rozdělit úkol na menší kroky, protože se tak lépe zorientuji a můžu postupovat postupně.
