@@ -3,8 +3,10 @@
 
 const input = "abc";
 
-// your code
+const number = Number(input);
 
+console.log(number);
+console.log(typeof number);
 
 // node task.js should print:
 // NaN
