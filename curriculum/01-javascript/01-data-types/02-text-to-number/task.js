@@ -6,10 +6,4 @@ const b = "20";
 
 // your code
 
-const add = (a, b) => {
-    return a + b;
-};
-
-console.log(add(10, 20));
-
 // node task.js should print: 30
