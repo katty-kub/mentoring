@@ -3,12 +3,8 @@
 // "42"  → 42
 
 const input = "abc";
-const number = Number(input);
 
-if (Number.isNaN(number)) {
-  console.log("invalid");
-} else {
-  console.log(number);
-}
+// your code
+
 
 // node task.js should print: invalid
