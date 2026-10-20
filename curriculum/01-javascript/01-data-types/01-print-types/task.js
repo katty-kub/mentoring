@@ -9,11 +9,6 @@ const isAdmin = true;
 // Print the type of each value.
 
 
-
-console.log(typeof age);
-console.log(typeof name);
-console.log(typeof isAdmin);
-
 // node task.js should print:
 // number
 // string
