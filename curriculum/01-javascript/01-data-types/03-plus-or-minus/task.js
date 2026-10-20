@@ -1,5 +1,5 @@
 // Predict what each line prints. Write your guess after it. Then run it.
-// "5" + 1 → ?
+// "5" + 1 → "51"
 
 console.log("5" + 1); // guess: "51"
 console.log("5" - 1); // guess: 4
