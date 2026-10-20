@@ -4,6 +4,7 @@
 const a = "10";
 const b = "20";
 
-// your code
+const sum = Number(a) + Number(b);
+console.log(sum);
 
 // node task.js should print: 30
