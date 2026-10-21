@@ -12,6 +12,16 @@ She reads code well; writing it is hard. Order: JS → JS for the web → React 
 - `TUTOR.md`: hints for the tutor, never the answer.
 - Docs: short imperative sentences. Each rule in one file; link, don't repeat.
 
+## Language
+
+- She reads English at A1. Talk to her in Czech. Write her files in Czech:
+  `README.md`, `ROADMAP.md`, `task.js` comments, the `tutor` skill.
+- Dev terms and tech slang only: English first, Czech in brackets, on first use per file: `loop (smyčka)`.
+  Never the other way round. Everyday words are plain Czech, no English.
+  Test: does she meet it as a term in docs or errors? If not, Czech: `vypiš`, `kód`, `Jinak vypiš`.
+- Code, names, commands and printed output stay English.
+- `TUTOR.md` stays English. The tutor says its tips and questions in Czech.
+
 ## Mentors
 
 - `.claude/settings.json` sets the Tutor style and blocks edits to `task.js`. Deny always wins.

@@ -1,97 +1,129 @@
-# Start here
+# Začni tady
 
-You learn to program here, one small task at a time.
-Path: JavaScript → JavaScript in the browser → React → TypeScript → Node.js + Express.
+Tady se učíš programovat, jeden malý task (úkol) po druhém.
+Cesta: JavaScript → JavaScript v browseru (prohlížeči) → React → TypeScript → Node.js + Express.
 
-**Claude is your tutor, not your solver.** It asks questions. It never writes your code.
-What you work out yourself, you remember.
+**Claude je tvůj tutor (lektor), ne řešitel.** Ptá se. Nikdy nepíše tvůj kód.
+Co vymyslíš sama, to si zapamatuješ.
 
-Your five goals:
+Odborná slova z programování jsou vždy nejdřív anglicky, česky v závorce: `loop (smyčka)`.
+Tak se naučíš slova, která programátoři opravdu používají. Ostatní je česky. Slova najdeš i ve [Slovníčku](#slovníček) dole.
 
-1. start a task you've never seen,
-2. break it into small steps,
-3. know when to use a loop, a condition or a function,
-4. find and fix bugs alone,
-5. explain your solution.
+Tvých pět cílů:
 
-## Setup (once)
+1. začít task, který jsi ještě neviděla,
+2. rozdělit ho na malé kroky,
+3. poznat, kdy použít loop (smyčku), condition (podmínku) nebo function (funkci),
+4. sama najít a opravit bugy (chyby),
+5. vysvětlit své řešení.
 
-1. Install [Node.js](https://nodejs.org) (LTS), [git](https://git-scm.com), the [GitHub CLI](https://cli.github.com)
-   and [Claude Code](https://code.claude.com/docs/en/quickstart).
-2. `git config --global user.name "Your Name"` and `git config --global user.email "you@example.com"`.
+## Nastavení, jen jednou
+
+1. Nainstaluj [Node.js](https://nodejs.org) (verzi LTS), [git](https://git-scm.com), [GitHub CLI](https://cli.github.com)
+   a [Claude Code](https://code.claude.com/docs/en/quickstart).
+2. `git config --global user.name "Tvoje Jméno"` a `git config --global user.email "ty@example.com"`.
 3. `gh auth login`.
 4. `git clone https://github.com/katty-kub/mentoring.git && cd mentoring`.
-5. Turn off AI suggestions in your editor. VS Code: this repo already does it.
-6. Run `claude`. Trust the folder.
+5. V editoru vypni AI suggestions (návrhy od AI). VS Code: tohle repo (repozitář) to dělá samo.
+6. Spusť `claude`. Klikni na „Trust the folder“.
 
-## Every module
+## Každý modul
 
-1. Create the branch the tutor names: `git switch -c data-types`.
-2. Solve its tasks, one by one.
-3. After the first task: open a pull request on GitHub. Your mentor follows it there.
-4. After the last task: write the module's `SUMMARY.md`, your cheat sheet. Merge. `git switch main && git pull`.
+1. Vytvoř branch (větev), kterou ti řekne tutor: `git switch -c data-types`.
+2. Vyřeš tasky modulu, jeden po druhém.
+3. Po prvním tasku: otevři na GitHubu pull request (žádost o sloučení). Tvůj mentor ho tam sleduje.
+4. Po posledním tasku: napiš `SUMMARY.md` modulu, svůj tahák.
+   Udělej merge (sloučení). Pak `git switch main && git pull`.
 
-## Every task
+## Každý task
 
-1. Run `claude`. Say **next**.
-2. Solve it with the five steps below.
-3. Stage the files the tutor lists. Commit. `git push` (first time on a branch: `git push -u origin data-types`).
-4. Type `/clear`. Say **next**.
+1. Spusť `claude`. Napiš **next** (další).
+2. Vyřeš task pomocí pěti kroků níže.
+3. Dej do stage (připrav ke commitu) soubory, které ti řekne tutor. Udělej commit (ulož změny).
+   Pak `git push` (pošli na GitHub). Poprvé na nové branchi: `git push -u origin data-types`.
+4. Napiš `/clear`. Napiš **next**.
 
-Stop any time. Next time, say **continue**. Task order: [curriculum/ROADMAP.md](curriculum/ROADMAP.md).
+Můžeš kdykoli přestat. Příště napiš **continue** (pokračuj).
+Pořadí tasků: [curriculum/ROADMAP.md](curriculum/ROADMAP.md).
 
-| Say | The tutor |
+| Napiš | Tutor |
 |---|---|
-| **next** | gives your next task |
-| **start sort-ascending** | gives that task instead |
-| **continue** | picks up where you stopped |
-| **I'm stuck** | asks for your three lines, then gives one hint |
-| **check my solution** | asks about your code |
-| **I'm done** | checks your work, lists the files to commit |
+| **next** (další) | dá ti další task |
+| **start sort-ascending** (začni sort-ascending) | dá ti místo toho tenhle task |
+| **continue** (pokračuj) | naváže tam, kde jsi skončila |
+| **I'm stuck** (zasekla jsem se) | zeptá se na tvoje tři řádky, pak dá jednu nápovědu |
+| **check my solution** (zkontroluj moje řešení) | ptá se na tvůj kód |
+| **I'm done** (jsem hotová) | zkontroluje tvou práci, řekne ti soubory pro commit |
 
-In each task folder: `task.js` is yours. Write your code below the task comments; don't change them.
-`TUTOR.md` is hints for the tutor. Don't read it: it spoils them.
+Tutorovi můžeš psát i česky.
 
-## Solve a task: five steps
+V každé složce tasku: `task.js` je tvůj. Svůj kód piš pod comments (komentáře) se zadáním. Ty neměň.
+`TUTOR.md` jsou nápovědy pro tutora. Nečti ho: zkazíš si tím nápovědy.
 
-Every task, even small ones. Write them down until they're automatic.
+## Jak vyřešit task: pět kroků
 
-**1. Understand.** No code yet. Say the task in your own words.
-Write two examples (input → output) and one edge case (empty, zero, wrong type, missing).
-Can't write the examples? Reread the task, or ask.
+Každý task, i ten malý. Piš si kroky, dokud ti nepřijdou automatické.
 
-**2. Plan.** Write the steps as comments in `task.js`. Plain words, no code.
+**1. Understand (pochop).** Zatím žádný kód. Řekni task vlastními slovy.
+Napiš dva příklady: input (vstup) → output (výstup).
+A jeden edge case (okrajový případ): prázdné, nula, špatný type (typ), chybějící.
+Neumíš napsat příklady? Přečti si task znovu, nebo se zeptej.
+
+**2. Plan (naplánuj).** Napiš kroky jako comments do `task.js`. Obyčejnými slovy, žádný kód.
 
 ```js
-// go through every number
-// remember the smallest one so far
-// at the end, print it
+// projdi každé číslo
+// pamatuj si zatím nejmenší
+// na konci ho vypiš
 ```
 
-| Ask | You probably need |
+| Zeptej se | Nejspíš potřebuješ |
 |---|---|
-| Does something **repeat**? | a loop |
-| Do I **choose** between options? | a condition (`if`) |
-| Do I do the **same thing twice**? | a function |
+| Něco se **opakuje**? | loop (smyčku) |
+| **Vybírám** mezi možnostmi? | condition (podmínku), `if` |
+| Dělám **to samé dvakrát**? | function (funkci) |
 
-**3. Code.** `cd` into the task folder. Turn one comment into code. Run `node task.js`. Then the next comment.
+**3. Code (napiš kód).** Jdi do složky tasku: `cd`. Přepiš jeden comment na kód. Spusť `node task.js`.
+Pak další comment.
 
-**4. Check.** Compare with `should print` at the bottom.
-Try your own examples and your edge case. Then put the original input back.
-Wrong? Don't guess. `console.log` the values just before it. Find **where** it breaks.
+**4. Check (zkontroluj).** Porovnej výsledek s řádkem `má vypsat` dole.
+Vyzkoušej své příklady a svůj edge case. Pak vrať původní input.
+Špatně? Nehádej. Vypiš hodnoty přes `console.log` těsně před tím místem. Najdi, **kde** se to rozbije.
 
-**5. Explain.** Tell the tutor in chat: what it does step by step, why this way, what happens with the edge case.
-Can't explain a part? Go back to that code.
+**5. Explain (vysvětli).** Napiš tutorovi do chatu: co kód dělá krok po kroku, proč takhle,
+co se stane s edge case.
+Neumíš nějakou část vysvětlit? Vrať se k tomu kódu.
 
-**Done when** `node task.js` prints what it should, also for your examples, and you explained it.
+**Hotovo, když** `node task.js` vypíše, co má, i pro tvoje příklady, a ty jsi to vysvětlila.
 
-## When you're stuck
+## Když se zasekneš
 
-Write three lines:
+Napiš tři řádky:
 
-1. **I'm trying to…**
-2. **I expected…**
-3. **What happened…**
+1. **Snažím se…**
+2. **Čekala jsem…**
+3. **Stalo se…**
 
-This often shows you the bug. If not, the tutor now has what it needs.
-Still stuck after all hints? Ask your mentor on the pull request. That's normal.
+Často ti už tohle ukáže bug. Když ne, tutor teď ví, co potřebuje.
+Pořád zaseklá i po všech nápovědách? Zeptej se mentora v pull requestu. To je normální.
+
+## Slovníček
+
+| English | Česky |
+|---|---|
+| task | úkol |
+| value | hodnota |
+| type | typ (number = číslo, string = text, boolean = true/false) |
+| array | pole, seznam hodnot `[5, 2, 8]` |
+| loop | smyčka, opakování |
+| condition | podmínka (`if`) |
+| function | funkce |
+| bug | chyba v kódu |
+| edge case | okrajový případ |
+| branch | větev v gitu |
+| commit | uložení změn v gitu |
+| stage | připravit soubor ke commitu (`git add`) |
+| push | poslat commity na GitHub |
+| pull request (PR) | žádost o kontrolu a sloučení |
+| merge | sloučit |
+| review | kontrola kódu |

@@ -1,11 +1,11 @@
-// Print only the values that are real numbers.
+// Vypiš jen ty values (hodnoty), které jsou opravdová čísla.
 // ["5", "abc", "7"] → 5 7
 
 const inputs = ["5", "abc", "7"];
 
-// your code
+// tvůj kód
 
 
-// node task.js should print:
+// node task.js má vypsat:
 // 5
 // 7
