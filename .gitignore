@@ -5,5 +5,9 @@
 CLAUDE.local.md
 .claude/settings.local.json
 
+# Secrets and dependencies
+.env
+node_modules/
+
 # macOS Finder
 .DS_Store

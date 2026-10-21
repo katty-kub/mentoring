@@ -14,7 +14,7 @@ Her question: "Why does all work go through a pull request, not straight to `mai
 ## Typical mistakes
 
 - `node task.js` from the repo root: file not found. Ask: "Which folder is your terminal in?"
-- Committing on `main`, no branch made. Ask her to run `git branch --show-current`.
+- Committing on `main`, no branch made. Ask her what the first line of `git status` says.
 - No quotes around the text in `console.log`.
 - First `git push` without `-u origin <branch>`.
 

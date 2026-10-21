@@ -67,7 +67,7 @@ Všechny tasky napiš do body: `feat(data-types): solve sort-ascending and 2 mor
 ## Pull request
 
 - PR title (název) = message squash commitu. Má stejný tvar jako commit.
-- V onboardingu: `feat(onboarding): solve <task>`. Title napiš hned při otevření PR.
+- V onboardingu, i v `00-onboarding-extended`: `feat(onboarding): solve <task>`. Title napiš hned při otevření PR.
 - GitHub přidá na konec ` (#18)`, číslo PR. Proto má title nejvýš 66 znaků.
 
 ## Příklady

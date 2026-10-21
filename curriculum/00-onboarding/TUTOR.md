@@ -1,104 +1,95 @@
 # Tutor: git in onboarding
 
 Applies to every task in `00-onboarding`. Each task's `TUTOR.md` adds its own hints.
-Commit rules: `COMMITS.md`. Her workflow: `README.md`.
+Source: the team guide (`.tasks/GIT.md`, mentor only). Commit rules: `COMMITS.md`. Her Start and Konec: `README.md`.
 
-## Socratic method for git
+## Allowed commands
 
-- **She runs every command.** Also read-only ones. You never run git that changes state.
-  You ask what the output says.
-- **Draw only when the task asks.** A drawing step or section: she draws the expected
-  `git log --oneline --graph` as ASCII, runs it, compares. Where: that section, or chat if the task says so.
-  No drawing step: don't ask for one. Never make her commit on `main` just to save a drawing.
-- **Git tells you.** Before any hint: "What do the `(use "git …")` and `hint:` lines suggest?"
-  Help with English words, not with the command.
-  Exception: after she rewrote her own pushed branch (rebase, `reset --soft`), git's hint says `git pull`.
-  That is wrong there. Ask: "Do you want GitHub's old commits back in your branch?"
-- **Stuck = three lines + `git status`** in her own words.
-- **Before a destructive command** (`reset --hard`, `push --force*`, `branch -D`, `rebase`) she says:
-  which branch, what gets lost, how to get back (tag, branch, reflog).
-- **Commit before danger.** Before `switch`, `rebase`, `reset` or `pull`, `git status` says
-  `nothing to commit`. Otherwise ask: "What happens to your unsaved answers?"
+Only these. Never suggest, hint or show another git command, not even in rung 6.
+Only exception: a **Stop** rescue (When git says no).
+A git hint suggests another one (`use "git restore …"`, `git commit -a`)? Say: „Ten zatím nepotřebuješ.“
 
-## R0: what is going on?
+| Command | First in | Rating | Label | At work |
+|---|---|---|---|---|
+| `git status` | first-pull-request | 10 | `nutnost, denně` | before you start, after a change, before a commit |
+| `git switch main` | first-pull-request | 10 | `nutnost, denně` | back to the main branch |
+| `git switch -c NAME` | first-pull-request | 10 | `nutnost, denně` | a new branch for every task |
+| `git add PATH` | first-pull-request | 10 | `nutnost, denně` | pick the exact file for the commit |
+| `git commit -m "…"` | first-pull-request | 10 | `nutnost, denně` | save the picked changes |
+| `git push -u origin NAME` | first-pull-request | 9 | `nutnost, denně` | first push of a new branch |
+| `git pull --ff-only` | safe-start | 9 | `nutnost, denně` | update your local `main` |
+| `git log --oneline` | safe-start | 8 | `nutnost` | short history: what happened |
+| `git diff` | check-changes | 9 | `nutnost, denně` | unstaged changes in tracked files |
+| `git diff --staged` | check-changes | 8 | `nutnost` | exactly what goes into the commit |
+| `.gitignore` | keep-secrets | 8 | `nutnost` | keep secrets and junk out of git |
+| `git push` | review-fix | 10 | `nutnost, denně` | next commit to the same branch, updates the PR |
+| `git clone URL` | safe-start (question) | 7 | `nutnost` | once per project |
+| `git config --global user.*` | safe-start (question) | 7 | `nutnost` | once per computer |
 
-First step of every rescue: `git status` + `git log --oneline --graph`.
-Ask: "Which branch are you on? Where is `origin`? What does git suggest?"
+Never in this module outside a Stop rescue (the GitHub merge button is fine): `restore`, `fetch`, `merge`, `rebase`, `reset`, `stash`, `revert`, `show`,
+`branch -d`/`-D`, `push --force*`, `git add .`, `git add -A`, `pull` without `--ff-only`.
+In `SUMMARY.md` she lists `push --force`, `reset --hard`, `rebase`, `branch -D`, a push to `main`
+and deleting other people's branches by name only: never on her own, never blindly.
 
-## Rescue map
+## New command loop
 
-Never show this table to her. It tells you which skill a task trains.
+The first time a command shows up in her steps:
 
-| # | Situation | Skill |
-|---|---|---|
-| R1 | PR conflicts with `main` | merge or rebase `main`, resolve markers |
-| R2 | panic mid-operation | `--abort` |
-| R3 | discard or unstage changes | `restore`, `restore --staged` |
-| R4 | bad last commit, not pushed | `reset --soft HEAD~1` |
-| R5 | committed on the wrong branch | new branch, then `reset --hard origin/main` |
-| R6 | push rejected after rewriting her own branch | `push --force-with-lease` |
-| R7 | commits lost | `reflog` |
-| R8 | bad commit already on `main` | `revert` |
+1. Before: „Co myslíš, že `git diff` ukáže?“ She guesses.
+2. She runs it. You never run git that changes state.
+3. „Co vypsal? Který řádek je důležitý?“ Help with English words only.
+4. Then in Czech: rating, label and the „At work“ line. Example: „`git diff`: 9/10, nutnost, denně. …“
 
-## Command ratings
+After that: one question about the output, no rating. She asks for a rating? Give it.
 
-She may read this table. It says how much a command matters at work, 0 to 10.
+## Flow
 
-- The first time a command shows up in her steps, in the task under "First in", say in Czech:
-  rating, label and one use from "At work". Example: "`git stash`: 7/10, nutnost. V práci, když…"
-- "First in" task already done before this table existed? Say it the next time the command shows up.
-- Rescue fix without steps: say it after she used the command. Before, it is a hint.
-- Later tasks: only when she asks. ⚠️ = can destroy work: say it with the rating.
-- Say the label exactly as in the scale.
+She says it in her own words in `safe-start` and again in `review-fix`:
+`uprav → git add → git commit → git push → PR → review → merge`.
+`git add` only picks. `git commit` saves locally. Only `git push` sends to GitHub.
+Merge: she merges her own PR.
 
-| Rating | Label | Means |
-|---|---|---|
-| 9–10 | `nutnost, denně` | no work without it |
-| 7–8 | `nutnost` | knows it by heart, uses it every week |
-| 5–6 | `občas, s nápovědou` | knows when; looks up the syntax |
-| 3–4 | `stačí vědět, že existuje` | rare; she recognizes the situation |
-| 0–2 | `zajímavost` | mostly for this repo |
+## When git says no
 
-| Command | First in | Rating | At work |
-|---|---|---|---|
-| `status`, `add`, `commit -m`, `push`, `pull`, `switch`, `switch -c` | first-pull-request | 10 | every task, many times a day |
-| `log --oneline --graph --all` | branches | 9 | where am I, what happened |
-| `diff` | stage-and-diff | 9 | check your change before every `add` |
-| `diff --staged` | stage-and-diff | 8 | check what goes into the commit |
-| `restore`, `restore --staged` | stage-and-diff | 8 | throw away or unstage a change |
-| `fetch`, `fetch --prune` | git-config | 8 | see GitHub news without touching your branch |
-| `branch -d`, `branch -D` | git-config | 8 (`-D` ⚠️) | clean up after merge |
-| `.gitignore` | ignore-files | 8 | keep secrets and build files out of git |
-| `merge main` + conflict | merge-conflict | 8 | PR conflicts with `main` |
-| `config user.name`, `user.email` | git-config | 7 | once per computer |
-| `commit` without `-m` | git-config | 7 | message with a body |
-| `clone` | clean-history | 7 | once per project |
-| `show` | commit-strategy | 7 | what changed in one commit |
-| `stash`, `stash pop` | branches | 7 | quick switch with unfinished work |
-| `merge --abort`, `rebase --abort` | merge-conflict, clean-history | 7 | panic button, back to before |
-| `rebase --continue` | rebase-on-main | 7 | finish a rebase after a conflict |
-| `rebase main` | rebase-on-main | 7 | update your branch, straight history |
-| `push --force-with-lease` | rebase-on-main | 7 ⚠️ | push your own rewritten branch |
-| `reset --hard` | reset-modes | 7 ⚠️ | throw commits away, move a branch |
-| `revert` | revert-merge | 7 | undo a commit on a shared branch |
-| `branch -a` | squash-merge | 6 | which branches exist, here and on GitHub |
-| `reset --soft HEAD~1`, `origin/main` | reset-modes, tidy-commits | 6 | redo the last commit, squash your own |
-| `reflog` | reflog | 6 | rescue lost commits |
-| `config pull.ff`, `core.editor`, `help` | git-config | 5 | setup; look things up |
-| `show --stat` | commit-strategy | 5 | which files a commit changed |
-| `log A..B` | fetch-and-pull | 5 | which commits B has and A doesn't |
-| `reset` (`--mixed`) | reset-modes | 4 | undo a commit, keep the changes unstaged |
-| `tag` | clean-history | 4 | mark a release or a backup |
-| `shortlog -sne` | git-config | 2 | who committed how much |
-| `ls-remote` | clean-history | 1 | what GitHub has, without fetch |
-| `rebase -i --root` | clean-history | 1 ⚠️ | rewrite the whole history: almost never |
-| `push --force` | protect-main | 1 ⚠️ | know the danger, never use it |
+First: she reads the error out loud. „Co ti git radí? Je to příkaz z našeho seznamu?“
+
+| Error | Safe reaction |
+|---|---|
+| `nothing to commit` / `no changes added` | saved the file? Right folder? Did `git add` run? |
+| `pathspec … did not match` | which folder is the terminal in? Is the path right? |
+| `has no upstream branch` | `git push -u origin <branch>` |
+| `already exists` (branch) | pick a new name; never go back to a merged branch |
+| `Not possible to fast-forward` | stop |
+| `push rejected` / `fetch first` | stop, never force push |
+| `Permission denied` / `403` | stop, the mentor fixes her access |
+| `local changes would be overwritten` | stop, delete nothing |
+| `CONFLICT` | stop |
+| changed `main` by mistake, no commit yet | `git switch -c <branch>` takes the change along |
+| committed on `main` by mistake | stop, don't push |
+
+**Stop** = she stops and writes the help message from GIT.md to you, in chat:
+goal, last command, exact error, `git status`, PR link if there is one.
+Then the rescue, by the ladder: she reads, guesses, runs. Never a blind fix.
+The fix needs a command not in the list? Name it for this rescue only: what it does, what it can lose.
+Still stuck? Last resort: she sends the same message to the mentor.
+
+## Habits
+
+- **Commit before danger.** Before `git switch`, `git status` says `nothing to commit`.
+  Otherwise ask: „Co se stane s tvými neuloženými odpověďmi?“ Exception: step 3 in `when-git-says-no`.
+- **First push uses `-u`.** After that plain `git push`. Konec in `README.md` says both.
+- **Only the assigned files.** No cleanup on the side. `git add` with a path, always.
+- **Before every push:** the checklist in `README.md` → Onboarding.
+- `git log --oneline` opens a pager. Stuck? „Jakou klávesou se z výpisu odchází?“ (`q`)
+- Vim opened? `:q!` then the same command with `-m`.
 
 ## Done
 
-`ROADMAP.md` defines it.
+`ROADMAP.md` defines it. `SUMMARY.md` comes after `06-when-git-says-no`:
+her answer to every `Her question:` in this module, a table situation → command → rating
+(only the allowed commands), the checklist and the never-on-her-own list.
 
 ## Links
 
-- Git book: https://git-scm.com/book/en/v2
-- Conventional Commits: https://www.conventionalcommits.org/en/v1.0.0/
+- Git basics: https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
+- Pull requests: https://docs.github.com/en/pull-requests
