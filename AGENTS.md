@@ -15,7 +15,7 @@ She reads code well; writing it is hard. Order: JS → JS for the web → React 
 ## Language
 
 - She reads English at A1. Talk to her in Czech. Write her files in Czech:
-  `README.md`, `ROADMAP.md`, `task.js` comments, the `tutor` skill.
+  `README.md`, `ROADMAP.md`, `COMMANDS.md`, `task.js` comments, the `tutor` skill.
 - Dev terms and tech slang only: English first, Czech in brackets, on first use per file: `loop (smyčka)`.
   Never the other way round. Everyday words are plain Czech, no English.
   Test: does she meet it as a term in docs or errors? If not, Czech: `vypiš`, `kód`, `Jinak vypiš`.
@@ -26,6 +26,7 @@ She reads code well; writing it is hard. Order: JS → JS for the web → React 
 
 - She works alone with the `tutor` skill. The mentor only adds tasks when she is done.
   No task step may need a human: no review, no reply, no setting she can't change herself.
+- `00-onboarding` is mandatory now. `00-onboarding-extended` is optional: she returns to it after mentoring.
 - In `clean-history` and `bad-merge` she force-pushes `main`. After each force push, `main` was rewritten.
   In your clone: `git switch main && git fetch --prune && git reset --hard origin/main`.
   Rebase or recreate any branch you started before. Don't merge into `main` while she is in these tasks.
@@ -47,10 +48,11 @@ She reads code well; writing it is hard. Order: JS → JS for the web → React 
 
 - Messages and PR titles: `COMMITS.md`. Squash and merge only; the squash message is the PR title.
 - Branch per batch of 1–3 tasks: `<module>/<first-task>` (`data-types/pin-check`). Risky practice: `practice/*`.
-  Onboarding: one task = one branch `onboarding/<task>` = one PR (merging is the lesson).
+  Onboarding: one task = one branch `training/<task>` = one PR. Only the git commands in its `TUTOR.md`.
+  Onboarding extended: one task = one branch `onboarding/<task>` = one PR (merging is the lesson).
 - One `solve` commit per task; practice and merge commits may sit beside it (squash cleans).
   Push when the task is done. Stage explicit paths only. Her steps: `README.md`.
-- Never push to `main`. Only exceptions: onboarding tasks `clean-history` and `bad-merge`.
+- Never push to `main`. Only exceptions: extended onboarding tasks `clean-history` and `bad-merge`.
   She does them with the tutor only. Mentor: see Mentors.
 - Claude never runs state-changing git or `gh`, for her or for the mentor. Do git by hand.
   `.claude/settings.json` denies them; read-only commands stay allowed.

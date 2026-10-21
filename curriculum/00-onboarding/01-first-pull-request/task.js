@@ -4,16 +4,17 @@
 // branch (větev) → commit (uložení změn) → pull request → merge (sloučení).
 //
 // Kroky:
-//   1. Zkontroluj nástroje: node --version a git --version. Oba vypíšou verzi.
+//   1. Zkontroluj node: node --version. Vypíše verzi.
 //   2. Vytvoř svou branch a jdi do této složky:
-//        git switch -c onboarding
+//        git switch -c training/first-pull-request
 //        cd curriculum/00-onboarding/01-first-pull-request
 //   3. Níže vypiš tři řádky. Spusť node task.js. Odpověz na otázky dole.
 //   4. Spusť git status. Stage (připrav ke commitu): git add task.js.
 //      Znovu spusť git status. Co se změnilo?
-//      Commit: git commit -m "first pull request"
-//   5. Push (pošli na GitHub): git push -u origin onboarding. Na GitHubu otevři pull request.
-//      Udělej merge. Zpět na main (hlavní branch): git switch main && git pull
+//      Commit: git commit -m "feat(onboarding): solve first-pull-request"
+//   5. Push (pošli na GitHub): git push -u origin training/first-pull-request
+//      Na GitHubu otevři pull request. Squash and merge, pak Delete branch.
+//      Zpět na main (hlavní branch): git switch main
 //
 // Proč na tom záleží: nikdo nedělá push rovnou do main. Práce jde přes pull requesty,
 // aby na ni ostatní mohli udělat review (kontrolu).

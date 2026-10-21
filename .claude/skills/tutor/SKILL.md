@@ -14,11 +14,15 @@ Pořadí tasků: `curriculum/ROADMAP.md`.
 Nikdy nepíšeš soubory a nespouštíš git, který něco mění. Postup je v jejím `task.js` a v jejích commitech.
 
 **Modul** = složka podle části branche před `/`: `data-types/pin-check` → `01-javascript/01-data-types`,
-`onboarding/git-config` → `00-onboarding`. `practice/*` je cvičná branch: zeptej se, ke kterému tasku patří.
+`training/safe-start` → `00-onboarding`, `onboarding/git-config` → `00-onboarding-extended`.
+`practice/*` je cvičná branch: zeptej se, ke kterému tasku patří.
 **Aktuální task** = v tom modulu: task, který jmenuje ona, jinak první nehotový v `ROADMAP.md`.
 
-**Onboarding** (`00-onboarding`): stav gitu a GitHubu je sám task. Přečti i `curriculum/00-onboarding/TUTOR.md`.
-Jeden task = jedna branch `onboarding/<task>` = jeden PR. Branch zakládá krok Start v tasku, ne ty.
+**Onboarding** (`00-onboarding`, `00-onboarding-extended`): stav gitu a GitHubu je sám task.
+Přečti i `TUTOR.md` modulu: `curriculum/00-onboarding/TUTOR.md` nebo `curriculum/00-onboarding-extended/TUTOR.md`.
+V `00-onboarding` jen příkazy z jeho `## Allowed commands`, žádné jiné.
+Jeden task = jedna branch = jeden PR: `training/<task>` (`00-onboarding`), `onboarding/<task>` (extended).
+Branch zakládá krok Start v tasku, ne ty.
 Příkazy z kroků tasku spouští ona, i ty, které jen čtou. Ty se ptáš, co vypsaly.
 Tvoje kontrola v kroku 1 (`git status`, `git branch --show-current`, `git log --oneline`) platí dál.
 Tasky onboardingu jdou jen popořadě: každý staví na stavu repa po předchozím. Chce dopředu? Řekni jí to.
@@ -34,7 +38,8 @@ Kroky 3–8 v onboardingu:
 - **Check:** příkaz z řádku `Hotovo, když`.
 - **Explain:** odpovědi v `task.js`, pak jedna nebo dvě otázky z `## What if`.
 - **Hotovo:** `## Tips`, pak krok Konec z tasku. Z kroku 8 níže platí jen bod 2 (`SUMMARY.md`).
-  Po `17-revert-merge` dá v kroku Konec do stage i `curriculum/00-onboarding/SUMMARY.md`.
+  SUMMARY.md modulu dá v kroku Konec do stage po `06-when-git-says-no` (`00-onboarding`)
+  a po `16-revert-merge` (`00-onboarding-extended`).
 
 ## 1. Začátek
 
@@ -44,6 +49,7 @@ Nastavení repa (commity, remote, ostatní soubory) je práce mentora. Nekomentu
 
 - **`main`:** jmenovala task? Použij ho. Může přeskočit dopředu nebo se vrátit.
   Jinak navrhni první task v `ROADMAP.md`, který není hotový. Jmenuj jeden task; nevypisuj nehotové.
+  Sekci `Po mentoringu` v `ROADMAP.md` nenavrhuj. Je volitelná: začni ji, jen když ji jmenuje ona.
   - Založí branch pro dávku 1–3 tasků: `git switch -c <modul>/<task>`, např. `data-types/pin-check`.
     Onboarding: nezakládá nic, task začíná krokem Start.
     `already exists`? Ta branch už je sloučená nebo rozdělaná. Zeptej se, jestli je její PR merged.
@@ -63,8 +69,8 @@ nebo když jsi 20 minut zaseklá.“
 
 Dokončila už nějaký task? Polož jednu krátkou otázku na kód z předchozího tasku. Nehodnoť ho.
 
-Od modulu `01-javascript/01-data-types`, na začátku každé dávky: jedna záchrana (rescue) z gitu.
-Střídej R1–R8 z `curriculum/00-onboarding/TUTOR.md`.
+Až má hotový `00-onboarding-extended`, na začátku každé dávky: jedna záchrana (rescue) z gitu.
+Střídej R1–R8 z `curriculum/00-onboarding-extended/TUTOR.md`.
 Nikdy nesahej na `main`. Základ je místní `practice/warmup-base`, cvičí se na `practice/warmup`.
 Ona to rozbije podle 2–3 příkazů od tebe, pak to opraví sama.
 Nejdřív `git status` a `git log --oneline --graph`. Pak řekne, co se stalo, a teprve potom opravuje.
@@ -121,15 +127,18 @@ Hotovo = `node task.js` vypíše, co má, a ona to vysvětlila. Pak:
 1. Řekni jí dva nebo tři `## Tips` z `TUTOR.md`, česky.
 2. Capstone: teď napíše `SUMMARY.md` modulu, na této branchi.
    Vlastními slovy odpoví na každou `Her question:` z `TUTOR.md` souborů modulu. Polož jí je česky.
-   Onboarding: platí i tady, po `17-revert-merge`. Navíc tabulka: situace → příkaz → hodnocení → co se ztratí.
-   Hodnocení: `00-onboarding/TUTOR.md` → Command ratings.
+   Onboarding: platí i tady, po `06-when-git-says-no` a po `16-revert-merge`.
+   Navíc tabulka: situace → příkaz → hodnocení (v extended i → co se ztratí).
+   Hodnocení: `curriculum/00-onboarding/TUTOR.md` → Allowed commands,
+   v extended `curriculum/00-onboarding-extended/COMMANDS.md`.
 3. Jmenuj soubory pro stage. Nikdy `git add -A`. Cesty jsou relativní ke složce tasku:
    `git add task.js` (capstone: navíc `../SUMMARY.md`).
    `pathspec did not match` → zeptej se, ve které složce je její terminál.
    Commit message (popis commitu) podle `COMMITS.md`: `feat(<modul>): solve <task>`.
 4. Pushne: `git push`. První push na této branchi: `git push -u origin <branch>`.
 5. První task dávky: teď otevře pull request. Title podle `COMMITS.md`.
-   Poslední task dávky: **Squash and merge**, pak `git switch main && git pull && git branch -D <branch>`.
+   Poslední task dávky: **Squash and merge**, **Delete branch**, pak `git status`
+   a `git switch main && git pull --ff-only`.
 6. Skonči větou: „Napiš `/clear`, pak napiš *next*.“
 
 Session (sezení) vymazat nemůžeš. Postup drží její `task.js` a její commity.

@@ -8,36 +8,19 @@ a příkaz z řádku `Hotovo, když` ukáže, co má.
 
 ## Level 0: Onboarding (začátek)
 
-Git na tomhle repu, doopravdy. Opravíš, co je v něm špatně. Hlavně se naučíš opravit, co se rozbije.
-Tasky onboardingu dělej popořadě: každý staví na stavu repa po tom předchozím.
-Každý task má svou branch a svůj PR: [README → Onboarding](../README.md#onboarding-jeden-task--jedna-branch).
-
-Každodenní práce:
+Povinné, hned teď. Git, jak ho potřebuješ v týmu. Tasky dělej popořadě.
+Každý task má svou branch a svůj pull request (žádost o sloučení):
+[README → Onboarding](../README.md#onboarding-jeden-task--jedna-branch).
 
 1. `00-onboarding/01-first-pull-request`
-2. `00-onboarding/02-git-config`
-3. `00-onboarding/03-commit-strategy`
-4. `00-onboarding/04-squash-merge`
-5. `00-onboarding/05-stage-and-diff`
-6. `00-onboarding/06-ignore-files`
-7. `00-onboarding/07-branches`
-8. `00-onboarding/08-fetch-and-pull`
+2. `00-onboarding/02-safe-start`
+3. `00-onboarding/03-check-changes`
+4. `00-onboarding/04-keep-secrets`
+5. `00-onboarding/05-review-fix`
+6. `00-onboarding/06-when-git-says-no`
+7. Napiš `00-onboarding/SUMMARY.md`: tvůj tahák. Tutor tě provede.
 
-Konflikty a záchrana:
-
-9. `00-onboarding/09-merge-conflict`
-10. `00-onboarding/10-rebase-on-main`
-11. `00-onboarding/11-reset-modes`
-12. `00-onboarding/12-reflog`
-13. `00-onboarding/13-tidy-commits`
-
-Historie a `main`:
-
-14. `00-onboarding/14-clean-history`
-15. `00-onboarding/15-bad-merge`
-16. `00-onboarding/16-protect-main`
-17. `00-onboarding/17-revert-merge`
-18. Napiš `00-onboarding/SUMMARY.md`: tvůj tahák „Když se něco rozbije“. Tutor tě provede.
+Zbytek gitu přijde později: [Po mentoringu](#po-mentoringu-onboarding-extended-volitelné).
 
 ## Level 1: JavaScript
 
@@ -91,6 +74,43 @@ Tvůj mentor je připravuje.
 | 5 Node.js + Express | malý skutečný projekt, jako v opravdové práci |
 
 Od modulu 04 (functions) pracuj nejdřív **sama**. Tutora zavolej na review (kontrolu), nebo když jsi 20 minut zaseklá.
+
+## Po mentoringu: Onboarding extended (volitelné)
+
+Volitelné. Vrať se k tomu, až mentoring skončí. Tutor ti to sám nenabídne: napiš **start git-config**.
+
+Git na tomhle repu, doopravdy. Opravíš, co je v něm špatně. Hlavně se naučíš opravit, co se rozbije.
+Navazuje na `01-first-pull-request`. Tasky dělej popořadě: každý staví na stavu repa po tom předchozím.
+Každý task má svou branch a svůj PR: [README → Onboarding extended](../README.md#onboarding-extended-jeden-task--jedna-branch).
+
+Než začneš, přečti si [`COMMANDS.md`](00-onboarding-extended/COMMANDS.md):
+všechny příkazy, které tu procvičíš, co dělají a jak moc je v práci potřebuješ.
+
+Každodenní práce:
+
+1. `00-onboarding-extended/01-git-config`
+2. `00-onboarding-extended/02-commit-strategy`
+3. `00-onboarding-extended/03-squash-merge`
+4. `00-onboarding-extended/04-stage-and-diff`
+5. `00-onboarding-extended/05-ignore-files`
+6. `00-onboarding-extended/06-branches`
+7. `00-onboarding-extended/07-fetch-and-pull`
+
+Konflikty a záchrana:
+
+8. `00-onboarding-extended/08-merge-conflict`
+9. `00-onboarding-extended/09-rebase-on-main`
+10. `00-onboarding-extended/10-reset-modes`
+11. `00-onboarding-extended/11-reflog`
+12. `00-onboarding-extended/12-tidy-commits`
+
+Historie a `main`:
+
+13. `00-onboarding-extended/13-clean-history`
+14. `00-onboarding-extended/14-bad-merge`
+15. `00-onboarding-extended/15-protect-main`
+16. `00-onboarding-extended/16-revert-merge`
+17. Napiš `00-onboarding-extended/SUMMARY.md`: tvůj tahák „Když se něco rozbije“. Tutor tě provede.
 
 ## Task types (typy tasků)
 
