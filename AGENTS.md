@@ -26,11 +26,11 @@ She reads code well; writing it is hard. Order: JS → JS for the web → React 
 
 - She works alone with the `tutor` skill. The mentor only adds tasks when she is done.
   No task step may need a human: no review, no reply, no setting she can't change herself.
-- After her PR `solve clean-history` or `solve bad-merge` merges, `main` was rewritten.
+- In `clean-history` and `bad-merge` she force-pushes `main`. After each force push, `main` was rewritten.
   In your clone: `git switch main && git fetch --prune && git reset --hard origin/main`.
   Rebase or recreate any branch you started before. Don't merge into `main` while she is in these tasks.
 - Your PR titles follow `COMMITS.md` too. In `clean-history` she rewords every other title on `main`.
-- No open PR and no extra branch while she is in `clean-branches` or `clean-history`.
+- No open PR and no extra branch while she is in `clean-history`.
   Delete your branch after merge until she turns on auto-delete in `squash-merge`.
 - `.claude/settings.json` sets the Tutor style and blocks edits to `task.js`. Deny always wins.
 - To write tasks with Claude: set `outputStyle` in the gitignored `.claude/settings.local.json`.

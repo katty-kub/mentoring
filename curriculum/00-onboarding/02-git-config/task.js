@@ -40,7 +40,4 @@
 // 2. Co dělá pull.ff only? Přečti si "git help config" (hledej pull.ff) nebo se zeptej tutora.
 // Odpověď:
 
-// 3. V kroku 9 jsi psala commit bez -m. Co se stalo jinak než dřív?
-// Odpověď:
-
 // Hotovo, když: git config user.email vypíše tvou noreply adresu a tvůj PR je merged (sloučený).
