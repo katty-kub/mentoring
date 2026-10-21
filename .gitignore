@@ -4,3 +4,6 @@
 # Personal Claude Code overrides
 CLAUDE.local.md
 .claude/settings.local.json
+
+# macOS Finder
+.DS_Store

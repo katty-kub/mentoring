@@ -1,5 +1,7 @@
 # Tutor: first pull request
 
+Her question: "Why does all work go through a pull request, not straight to `main`?"
+
 ## Ladder
 
 - Printing: "What have you seen in code that shows something in the terminal?"

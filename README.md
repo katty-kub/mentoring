@@ -22,26 +22,59 @@ Tvých pět cílů:
 1. Nainstaluj [Node.js](https://nodejs.org) (verzi LTS), [git](https://git-scm.com), [GitHub CLI](https://cli.github.com)
    a [Claude Code](https://code.claude.com/docs/en/quickstart).
 2. `git config --global user.name "Tvoje Jméno"` a `git config --global user.email "ty@example.com"`.
+   Task `git-config` to pak doladí.
 3. `gh auth login`.
 4. `git clone https://github.com/katty-kub/mentoring.git && cd mentoring`.
 5. V editoru vypni AI suggestions (návrhy od AI). VS Code: tohle repo (repozitář) to dělá samo.
 6. Spusť `claude`. Klikni na „Trust the folder“.
 
-## Každý modul
+## Každá dávka tasků
 
-1. Vytvoř branch (větev), kterou ti řekne tutor: `git switch -c data-types`.
-2. Vyřeš tasky modulu, jeden po druhém.
-3. Po prvním tasku: otevři na GitHubu pull request (žádost o sloučení). Tvůj mentor ho tam sleduje.
-4. Po posledním tasku: napiš `SUMMARY.md` modulu, svůj tahák.
-   Udělej merge (sloučení). Pak `git switch main && git pull`.
+Dávka = 1 až 3 tasky na jedné branchi (větvi). Git příkazy píšeš vždy sama, ve svém terminálu.
+Tutor se ptá, ty spouštíš.
+
+1. Začni na čistém main (hlavní branch): `git switch main && git pull`.
+2. Nová branch: `<modul>/<první-task>`, např. `git switch -c data-types/pin-check`.
+3. Vyřeš tasky, jeden po druhém. Každý task končí commitem (uložením změn) `solve`.
+   Cvičné commity navíc nevadí: squash je spojí.
+4. Otevři na GitHubu pull request (žádost o sloučení). Title (název) piš podle [COMMITS.md](COMMITS.md).
+5. Merge (sloučení) jen přes **Squash and merge**.
+6. Ukliď: `git switch main && git pull && git branch -D <branch>`. Další dávka = nová branch.
+   Na sloučenou branch se nevracej.
+
+Branch je pozadu za main? `git switch main && git pull`, zpátky na branch, pak `git merge main`.
+Po posledním tasku modulu: napiš `SUMMARY.md` modulu, svůj tahák.
+
+## Onboarding: jeden task = jedna branch
+
+V `00-onboarding` je dávka vždy jeden task. Každý task má svou branch a svůj PR.
+Všechny příkazy spouštěj v root (kořeni) repa, tam kde je `README.md`.
+`<soubor>` v krocích = `task.js` toho tasku, s celou cestou: `curriculum/00-onboarding/…/task.js`.
+
+**Start jako vždy:**
+
+1. `git switch main && git pull`
+2. `git status` musí říct `nothing to commit`.
+3. `git switch -c onboarding/<task>`, např. `onboarding/reset-modes`.
+
+**Konec jako vždy:**
+
+1. `git add <soubor>` a `git commit -m "feat(onboarding): solve <task>"`
+2. `git push -u origin onboarding/<task>`
+3. Otevři PR (nebo použij ten otevřený). Title: `feat(onboarding): solve <task>`.
+4. **Squash and merge.**
+5. `git switch main && git pull && git branch -D onboarding/<task>`
+6. Smaž i své `practice/…` branche z tohoto tasku. Na GitHubu: stránka Branches.
+   Task říká, ať nějakou zatím necháš? Nech ji.
 
 ## Každý task
 
 1. Spusť `claude`. Napiš **next** (další).
 2. Vyřeš task pomocí pěti kroků níže.
-3. Dej do stage (připrav ke commitu) soubory, které ti řekne tutor. Udělej commit (ulož změny).
-   Pak `git push` (pošli na GitHub). Poprvé na nové branchi: `git push -u origin data-types`.
-4. Napiš `/clear`. Napiš **next**.
+3. Dej do stage (připrav ke commitu) soubory, které ti řekne tutor.
+   Udělej commit, message (popis) podle [COMMITS.md](COMMITS.md): `feat(data-types): solve pin-check`.
+4. `git push` (pošli na GitHub). Poprvé na nové branchi: `git push -u origin <branch>`.
+5. Napiš `/clear`. Napiš **next**.
 
 Můžeš kdykoli přestat. Příště napiš **continue** (pokračuj).
 Pořadí tasků: [curriculum/ROADMAP.md](curriculum/ROADMAP.md).
@@ -105,7 +138,8 @@ Napiš tři řádky:
 3. **Stalo se…**
 
 Často ti už tohle ukáže bug. Když ne, tutor teď ví, co potřebuje.
-Pořád zaseklá i po všech nápovědách? Zeptej se mentora v pull requestu. To je normální.
+Pořád zaseklá i po všech nápovědách? Napiš své tři řádky do `task.js` pod task, udělej commit
+a dej si pauzu. Příště napiš **continue**. To je normální.
 
 ## Slovníček
 
@@ -123,7 +157,24 @@ Pořád zaseklá i po všech nápovědách? Zeptej se mentora v pull requestu. T
 | branch | větev v gitu |
 | commit | uložení změn v gitu |
 | stage | připravit soubor ke commitu (`git add`) |
+| untracked | nový soubor, který git zatím nesleduje |
+| ignore | git soubor nesleduje, protože je v `.gitignore` |
 | push | poslat commity na GitHub |
 | pull request (PR) | žádost o kontrolu a sloučení |
 | merge | sloučit |
 | review | kontrola kódu |
+| remote | vzdálené repo, tady GitHub (`origin`) |
+| fetch | stáhnout novinky z GitHubu, nic nezměnit |
+| pull | stáhnout novinky a přidat je do své branche |
+| HEAD | místo, kde právě jsi: tvoje branch a její poslední commit |
+| conflict | dvě změny stejného řádku. Vybereš ty |
+| squash | víc commitů → jeden |
+| rebase | přehrání commitů na nový základ |
+| reset | posunout branch na jiný commit |
+| revert | nový commit, který vrátí starý |
+| stash | odložit rozdělané změny stranou |
+| reflog | deník gitu: kde všude HEAD byl |
+| tag | štítek na commitu, který se nikdy neposune |
+| SHA | otisk commitu, jeho jméno: `e12e626` |
+| cherry-pick | zkopírovat jeden commit na jinou branch |
+| force push | push, který přepíše historii na GitHubu |

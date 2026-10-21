@@ -24,9 +24,17 @@ She reads code well; writing it is hard. Order: JS → JS for the web → React 
 
 ## Mentors
 
+- She works alone with the `tutor` skill. The mentor only adds tasks when she is done.
+  No task step may need a human: no review, no reply, no setting she can't change herself.
+- After her PR `solve clean-history` or `solve bad-merge` merges, `main` was rewritten.
+  In your clone: `git switch main && git fetch --prune && git reset --hard origin/main`.
+  Rebase or recreate any branch you started before. Don't merge into `main` while she is in these tasks.
+- Your PR titles follow `COMMITS.md` too. In `clean-history` she rewords every other title on `main`.
+- No open PR and no extra branch while she is in `clean-branches` or `clean-history`.
+  Delete your branch after merge until she turns on auto-delete in `squash-merge`.
 - `.claude/settings.json` sets the Tutor style and blocks edits to `task.js`. Deny always wins.
 - To write tasks with Claude: set `outputStyle` in the gitignored `.claude/settings.local.json`.
-  Edit `task.js` in your editor.
+  Edit `task.js` in your editor. Claude drafts them in `.tasks/<topic>/drafts/`.
 - `.tasks/` is the mentor's gitignored workspace. Never commit it.
 
 ## Code by level
@@ -37,5 +45,12 @@ She reads code well; writing it is hard. Order: JS → JS for the web → React 
 
 ## Git
 
-- One branch per module, named after its folder without the number (`data-types`). One PR per module. Never push to `main`.
-- One commit per task, pushed right away. Message: `<what changed>`. Stage explicit paths only.
+- Messages and PR titles: `COMMITS.md`. Squash and merge only; the squash message is the PR title.
+- Branch per batch of 1–3 tasks: `<module>/<first-task>` (`data-types/pin-check`). Risky practice: `practice/*`.
+  Onboarding: one task = one branch `onboarding/<task>` = one PR (merging is the lesson).
+- One `solve` commit per task; practice and merge commits may sit beside it (squash cleans).
+  Push when the task is done. Stage explicit paths only. Her steps: `README.md`.
+- Never push to `main`. Only exceptions: onboarding tasks `clean-history` and `bad-merge`.
+  She does them with the tutor only. Mentor: see Mentors.
+- Claude never runs state-changing git or `gh`, for her or for the mentor. Do git by hand.
+  `.claude/settings.json` denies them; read-only commands stay allowed.
