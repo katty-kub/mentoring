@@ -1,21 +1,21 @@
-# Roadmap
+# Roadmap (plán cesty)
 
-One task at a time. This order is a suggestion: you may skip ahead or go back.
-A task is finished when it's committed, and `node task.js` prints what its `should print` comment says.
-Predict tasks have no `should print`: there, every line needs your guess.
-Onboarding has none either: there, the commit is enough.
+Jeden task (úkol) po druhém. Pořadí je jen návrh: můžeš přeskočit dopředu nebo se vrátit.
+Task je hotový, když je v commitu a `node task.js` vypíše, co říká jeho comment `má vypsat`.
+Predict (předpověz) tasky `má vypsat` nemají: tam musí mít každý řádek tvůj tip.
+Onboarding ho nemá taky: tam stačí commit.
 
-## Level 0: Onboarding
+## Level 0: Onboarding (začátek)
 
 1. `00-onboarding/01-first-pull-request`
 
 ## Level 1: JavaScript
 
-### 01 Data types
+### 01 Data types (datové typy)
 
-Your first `if` and your first loop come here. Modules 02 and 03 go deeper.
+Tady přijde tvůj první `if` a tvůj první loop (smyčka). Moduly 02 a 03 jdou víc do hloubky.
 
-One value, no loop:
+Jedna value (hodnota), bez loopu:
 
 1. `01-javascript/01-data-types/01-print-types`
 2. `01-javascript/01-data-types/02-text-to-number`
@@ -30,7 +30,7 @@ One value, no loop:
 11. `01-javascript/01-data-types/11-pin-check`
 12. `01-javascript/01-data-types/12-fix-the-total`
 
-Lists, with a loop:
+Lists (seznamy), s loopem:
 
 13. `01-javascript/01-data-types/13-print-all`
 14. `01-javascript/01-data-types/14-smallest-number`
@@ -43,40 +43,42 @@ Lists, with a loop:
 21. `01-javascript/01-data-types/21-sort-big-numbers`
 22. `01-javascript/01-data-types/22-only-real-numbers`
 
-All together:
+Všechno dohromady:
 
 23. `01-javascript/01-data-types/23-capstone`
-24. Write `01-javascript/01-data-types/SUMMARY.md`: your cheat sheet.
+24. Napiš `01-javascript/01-data-types/SUMMARY.md`: svůj tahák.
 
-### Coming next
+### Co přijde dál
 
-Your mentor is preparing these.
+Tvůj mentor je připravuje.
 
-| Level | Modules |
+| Level | Moduly |
 |---|---|
-| 1 JavaScript | 02 conditions · 03 loops · 04 functions · 05 arrays · 06 objects · 07 scope & closures · 08 errors & debugging |
-| 2 JavaScript for the web | 01 DOM · 02 events · 03 modules · 04 async & fetch · 05 the browser debugger |
-| 3 React | 01 components · 02 props · 03 state · 04 effects · 05 forms · 06 lists |
-| 4 TypeScript | 01 typing your own JavaScript · 02 React with TypeScript |
-| 5 Node.js + Express | a small real project, worked like in a real job |
+| 1 JavaScript | 02 conditions (podmínky) · 03 loops (smyčky) · 04 functions (funkce) · 05 arrays (pole) · 06 objects (objekty) · 07 scope & closures (rozsah platnosti a uzávěry) · 08 errors & debugging (chyby a hledání chyb) |
+| 2 JavaScript pro web | 01 DOM (stránka jako strom) · 02 events (události) · 03 modules (moduly) · 04 async & fetch (asynchronní kód a stahování dat) · 05 browser debugger (ladění v prohlížeči) |
+| 3 React | 01 components (komponenty) · 02 props (vstupy komponenty) · 03 state (stav) · 04 effects (efekty) · 05 forms (formuláře) · 06 lists (seznamy) |
+| 4 TypeScript | 01 typing (typování) tvého vlastního JavaScriptu · 02 React s TypeScriptem |
+| 5 Node.js + Express | malý skutečný projekt, jako v opravdové práci |
 
-From module 04 (functions) on, work **solo first**. Call the tutor for a review, or after 20 minutes stuck.
+Od modulu 04 (functions) pracuj nejdřív **sama**. Tutora zavolej na review (kontrolu), nebo když jsi 20 minut zaseklá.
 
-## Task types
+## Task types (typy tasků)
 
-Each module goes from reading code to writing it alone.
+Každý modul vede od čtení kódu k tomu, že ho napíšeš sama.
 
-| Type | You do |
+| Type | Co děláš |
 |---|---|
-| **Guided** | follow the steps (onboarding only) |
-| **Predict** | read code, write what it prints, run it, explain surprises |
-| **Modify** | change working code to do something new |
-| **Parsons** | put shuffled lines in order. One line doesn't belong |
-| **Make** | write code from a one-line task |
-| **Fix-the-bug** | read a bug report, find the cause, fix it |
-| **Capstone** | one task that uses the whole module |
+| **Guided** (s návodem) | jdeš podle kroků, jen v onboardingu |
+| **Predict** (předpověz) | čteš kód, napíšeš, co vypíše, spustíš ho, vysvětlíš překvapení |
+| **Modify** (uprav) | změníš funkční kód, aby dělal něco nového |
+| **Parsons** (poskládej) | seřadíš zamíchané řádky. Jeden řádek tam nepatří |
+| **Make** (vytvoř) | napíšeš kód podle zadání na jeden řádek |
+| **Fix-the-bug** (oprav chybu) | přečteš bug report (hlášení chyby), najdeš příčinu, opravíš ji |
+| **Capstone** (závěrečný task) | jeden task, který použije celý modul |
 
-## Read more
+## Čti dál
+
+Docs (dokumentace) jsou anglicky. Pomůže ti překladač v prohlížeči.
 
 - JavaScript: [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) · [javascript.info](https://javascript.info)
 - React: [react.dev/learn](https://react.dev/learn)

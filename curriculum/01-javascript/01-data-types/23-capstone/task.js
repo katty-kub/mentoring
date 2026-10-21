@@ -1,9 +1,9 @@
-// Print the largest price. Skip values that aren't numbers.
+// Vypiš největší cenu. Přeskoč values (hodnoty), které nejsou čísla.
 // ["10", "abc", "25"] → 25
 
 const prices = ["10", "abc", "25"];
 
-// your code
+// tvůj kód
 
 
-// node task.js should print: 25
+// node task.js má vypsat: 25
