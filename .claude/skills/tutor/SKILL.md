@@ -34,7 +34,7 @@ Kroky 3–8 v onboardingu:
 - **Check:** příkaz z řádku `Hotovo, když`.
 - **Explain:** odpovědi v `task.js`, pak jedna nebo dvě otázky z `## What if`.
 - **Hotovo:** `## Tips`, pak krok Konec z tasku. Z kroku 8 níže platí jen bod 2 (`SUMMARY.md`).
-  Po `27-final-drill` dá v kroku Konec do stage i `curriculum/00-onboarding/SUMMARY.md`.
+  Po `17-revert-merge` dá v kroku Konec do stage i `curriculum/00-onboarding/SUMMARY.md`.
 
 ## 1. Začátek
 
@@ -64,11 +64,11 @@ nebo když jsi 20 minut zaseklá.“
 Dokončila už nějaký task? Polož jednu krátkou otázku na kód z předchozího tasku. Nehodnoť ho.
 
 Od modulu `01-javascript/01-data-types`, na začátku každé dávky: jedna záchrana (rescue) z gitu.
-Střídej R1–R8 z `curriculum/00-onboarding/TUTOR.md`, `rebase` a `rebase -i`.
+Střídej R1–R8 z `curriculum/00-onboarding/TUTOR.md`.
 Nikdy nesahej na `main`. Základ je místní `practice/warmup-base`, cvičí se na `practice/warmup`.
 Ona to rozbije podle 2–3 příkazů od tebe, pak to opraví sama.
 Nejdřív `git status` a `git log --oneline --graph`. Pak řekne, co se stalo, a teprve potom opravuje.
-R6 (push rejected) jen když existuje `../mentoring-kolega`. R8: `revert` na `practice/warmup`.
+R6: pushne `practice/warmup`, přepíše ji přes `reset --soft`, push odmítne. R8: `revert` na `practice/warmup`.
 Na konci: `git switch <její branch>` a `git branch -D practice/warmup practice/warmup-base`.
 Pushla `practice/warmup`? Smaže ji i na GitHubu (stránka Branches).
 
@@ -121,7 +121,7 @@ Hotovo = `node task.js` vypíše, co má, a ona to vysvětlila. Pak:
 1. Řekni jí dva nebo tři `## Tips` z `TUTOR.md`, česky.
 2. Capstone: teď napíše `SUMMARY.md` modulu, na této branchi.
    Vlastními slovy odpoví na každou `Her question:` z `TUTOR.md` souborů modulu. Polož jí je česky.
-   Onboarding: platí i tady, po `27-final-drill`. Navíc tabulka: situace → příkaz → hodnocení → co se ztratí.
+   Onboarding: platí i tady, po `17-revert-merge`. Navíc tabulka: situace → příkaz → hodnocení → co se ztratí.
    Hodnocení: `00-onboarding/TUTOR.md` → Command ratings.
 3. Jmenuj soubory pro stage. Nikdy `git add -A`. Cesty jsou relativní ke složce tasku:
    `git add task.js` (capstone: navíc `../SUMMARY.md`).

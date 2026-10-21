@@ -65,7 +65,6 @@ Všechny příkazy spouštěj v root (kořeni) repa, tam kde je `README.md`.
 4. **Squash and merge.**
 5. `git switch main && git pull && git branch -D onboarding/<task>`
 6. Smaž i své `practice/…` branche z tohoto tasku. Na GitHubu: stránka Branches.
-   Task říká, ať nějakou zatím necháš? Nech ji.
 
 ## Každý task
 
@@ -176,5 +175,4 @@ a dej si pauzu. Příště napiš **continue**. To je normální.
 | reflog | deník gitu: kde všude HEAD byl |
 | tag | štítek na commitu, který se nikdy neposune |
 | SHA | otisk commitu, jeho jméno: `e12e626` |
-| cherry-pick | zkopírovat jeden commit na jinou branch |
 | force push | push, který přepíše historii na GitHubu |

@@ -16,38 +16,28 @@ Každodenní práce:
 
 1. `00-onboarding/01-first-pull-request`
 2. `00-onboarding/02-git-config`
-3. `00-onboarding/03-read-history`
-4. `00-onboarding/04-commit-strategy`
-5. `00-onboarding/05-squash-merge`
-6. `00-onboarding/06-stage-and-diff`
-7. `00-onboarding/07-ignore-files`
-8. `00-onboarding/08-branches`
-9. `00-onboarding/09-clean-branches`
-10. `00-onboarding/10-fetch-and-pull`
+3. `00-onboarding/03-commit-strategy`
+4. `00-onboarding/04-squash-merge`
+5. `00-onboarding/05-stage-and-diff`
+6. `00-onboarding/06-ignore-files`
+7. `00-onboarding/07-branches`
+8. `00-onboarding/08-fetch-and-pull`
 
-Záchrana a společná historie:
+Konflikty a záchrana:
 
-11. `00-onboarding/11-undo-commit`
-12. `00-onboarding/12-reset-modes`
-13. `00-onboarding/13-merge-conflict`
-14. `00-onboarding/14-pull-conflict`
-15. `00-onboarding/15-rebase-on-main`
-16. `00-onboarding/16-cherry-pick`
-17. `00-onboarding/17-force-push`
-18. `00-onboarding/18-rescue-colleague`
-19. `00-onboarding/19-reflog`
-20. `00-onboarding/20-wrong-branch`
-21. `00-onboarding/21-rebase-interactive`
-22. `00-onboarding/22-rescue-drill`
+9. `00-onboarding/09-merge-conflict`
+10. `00-onboarding/10-rebase-on-main`
+11. `00-onboarding/11-reset-modes`
+12. `00-onboarding/12-reflog`
+13. `00-onboarding/13-tidy-commits`
 
 Historie a `main`:
 
-23. `00-onboarding/23-clean-history`
-24. `00-onboarding/24-bad-merge`
-25. `00-onboarding/25-protect-main`
-26. `00-onboarding/26-revert-merge`
-27. `00-onboarding/27-final-drill`
-28. Napiš `00-onboarding/SUMMARY.md`: tvůj tahák „Když se něco rozbije“. Tutor tě provede.
+14. `00-onboarding/14-clean-history`
+15. `00-onboarding/15-bad-merge`
+16. `00-onboarding/16-protect-main`
+17. `00-onboarding/17-revert-merge`
+18. Napiš `00-onboarding/SUMMARY.md`: tvůj tahák „Když se něco rozbije“. Tutor tě provede.
 
 ## Level 1: JavaScript
 
