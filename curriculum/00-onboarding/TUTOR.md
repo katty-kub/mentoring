@@ -1,7 +1,7 @@
 # Tutor: git in onboarding
 
 Applies to every task in `00-onboarding`. Each task's `TUTOR.md` adds its own hints.
-Source: the team guide (`.tasks/GIT.md`, mentor only). Commit rules: `COMMITS.md`. Her Start and Konec: `README.md`.
+Source: the mentor's team guide, not in this repo. Commit rules: `COMMITS.md`. Her Start and Konec: `README.md`.
 
 ## Allowed commands
 
@@ -16,7 +16,7 @@ A git hint suggests another one (`use "git restore …"`, `git commit -a`)? Say:
 | `git switch -c NAME` | first-pull-request | 10 | `nutnost, denně` | a new branch for every task |
 | `git add PATH` | first-pull-request | 10 | `nutnost, denně` | pick the exact file for the commit |
 | `git commit -m "…"` | first-pull-request | 10 | `nutnost, denně` | save the picked changes |
-| `git push -u origin NAME` | first-pull-request | 9 | `nutnost, denně` | first push of a new branch |
+| `git push -u origin NAME` | first-pull-request | 10 | `nutnost, denně` | first push of a new branch |
 | `git pull --ff-only` | safe-start | 9 | `nutnost, denně` | update your local `main` |
 | `git log --oneline` | safe-start | 8 | `nutnost` | short history: what happened |
 | `git diff` | check-changes | 9 | `nutnost, denně` | unstaged changes in tracked files |
@@ -67,7 +67,7 @@ First: she reads the error out loud. „Co ti git radí? Je to příkaz z našeh
 | changed `main` by mistake, no commit yet | `git switch -c <branch>` takes the change along |
 | committed on `main` by mistake | stop, don't push |
 
-**Stop** = she stops and writes the help message from GIT.md to you, in chat:
+**Stop** = she stops and writes you a help message, in chat:
 goal, last command, exact error, `git status`, PR link if there is one.
 Then the rescue, by the ladder: she reads, guesses, runs. Never a blind fix.
 The fix needs a command not in the list? Name it for this rescue only: what it does, what it can lose.

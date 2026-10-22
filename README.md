@@ -87,8 +87,8 @@ Všechny příkazy spouštěj v root (kořeni) repa, tam kde je `README.md`.
 
 **Start jako vždy:**
 
-1. `git switch main && git pull`
-2. `git status` musí říct `nothing to commit`.
+1. `git status` musí říct `nothing to commit`.
+2. `git switch main && git pull`
 3. `git switch -c onboarding/<task>`, např. `onboarding/reset-modes`.
 
 **Konec jako vždy:**
@@ -115,7 +115,7 @@ Jen tyhle. Jiné git commands v onboardingu nepoužívej.
 | `git switch -c <branch>` | založí novou branch a přepne na ni | 10 · `nutnost, denně` | first-pull-request |
 | `git add <soubor>` | dá soubor do stage. Vždy jménem, ne „všechno“ | 10 · `nutnost, denně` | first-pull-request |
 | `git commit -m "…"` | uloží stage jako commit s popisem | 10 · `nutnost, denně` | first-pull-request |
-| `git push -u origin <branch>` | první push nové branche | 9 · `nutnost, denně` | first-pull-request |
+| `git push -u origin <branch>` | první push nové branche | 10 · `nutnost, denně` | first-pull-request |
 | `git pull --ff-only` | aktualizuje tvůj `main` z GitHubu | 9 · `nutnost, denně` | safe-start |
 | `git log --oneline` | krátká historie: jeden commit na řádek | 8 · `nutnost` | safe-start |
 | `git diff` | změny, které ještě nejsou ve stage | 9 · `nutnost, denně` | check-changes |

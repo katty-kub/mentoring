@@ -8,8 +8,8 @@
 // U každé hlášky: hlavní řádek si opiš a řekni tutorovi, co znamená.
 //
 // Kroky:
-//   1. git status: "nothing to commit"? git switch main, git pull --ff-only.
-//      Branch (větev) zatím nezakládej!
+//   1. git status. Musí říct "nothing to commit". Jinak stop: nic nemaž, napiš tutorovi.
+//      git switch main, git pull --ff-only. Branch (větev) zatím nezakládej!
 //   2. Níže dopiš do name své jméno. git status: na které branchi je ta změna?
 //   3. Jejda, měníš main. Nedělej commit (uložení změn). git switch -c training/when-git-says-no
 //      git status: kde je změna teď?

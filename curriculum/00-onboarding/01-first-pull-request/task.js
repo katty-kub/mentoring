@@ -35,3 +35,5 @@ console.log("Chci vytvořit vlastní aplikaci a učit se při tom programovat.")
 
 // 3. Přečti si README.md. Který z tvých pěti cílů je teď nejdůležitější? Proč?
 // Odpověď:Nejdůležitější je pro mě rozdělit úkol na menší kroky, protože se tak lépe zorientuji a můžu postupovat postupně.
+
+// Hotovo, když: PR je merged (sloučený) a na GitHubu je v main tvůj task.js s tvými řádky.
