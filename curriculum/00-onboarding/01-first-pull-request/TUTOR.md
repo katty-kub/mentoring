@@ -1,5 +1,6 @@
 # Tutor: first pull request
 
+Method: `../TUTOR.md`. New: `git status`, `git switch`, `git add`, `git commit`, `git push -u`.
 Her question: "Why does all work go through a pull request, not straight to `main`?"
 
 ## Ladder
@@ -24,7 +25,6 @@ Her question: "Why does all work go through a pull request, not straight to `mai
 
 ## Tips
 
-- `git log --oneline` shows one line per commit. Her first commit is there now.
 - `console.log` prints several things at once: two values, separated by a comma.
 - Everyone has committed to the wrong branch once. `git switch -c` is the habit that saves you.
 

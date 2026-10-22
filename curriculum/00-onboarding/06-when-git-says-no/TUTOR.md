@@ -10,7 +10,10 @@ Expected errors (step → main line):
 - 6: `fatal: The current branch training/when-git-says-no has no upstream branch.`
 - 7: `fatal: a branch named 'training/safe-start' already exists`
 
-`git push` in step 6 just works? `push.autoSetupRemote` is on. Ask why it worked, skip it.
+`git push` in step 6 just works? `push.autoSetupRemote` is on, or `push.default` is `current`.
+Ask why it worked, skip it.
+Step 5 gives no error? `notes.txt` is left over from check-changes. She deletes it,
+runs `git add notes.txt` (stages the deletion), then step 5 again.
 Step 7 works because she made `training/safe-start` in safe-start and never deletes branches.
 Before step 7, ask if she cloned the repo again since safe-start. Yes? Skip step 7:
 `git switch -c` would succeed and leave her on a stray branch.

@@ -11,14 +11,17 @@ Her question: "Why does every task start on a fresh `main` and a new branch?"
   → "And if both had new commits?"
 - Log: "Each line is one commit. What is the short code at its start for?"
 - Clone and config: "What do you already have on this computer that you set up once?"
+- Flow (`../TUTOR.md` → Flow), after step 9: "What happens between editing a file and the merge?
+  Say it step by step."
 
 ## Typical mistakes
 
 - `git switch -c` before `git pull --ff-only`: the branch starts on an old `main`.
 - Stuck in the `git log` pager. Ask how to leave it.
 - Wrong folder: `pathspec did not match`. Ask where the terminal is.
-- Can't find her commit: two count. `completed task (#14)` near the top (the squash),
-  `first pull request` further down. Scroll with Space.
+- Can't find her commit. Usually `feat(onboarding): solve first-pull-request (#N)` near the top.
+  Katy did 01 before that title: hers is `first pull request`, just under `Merge pull request #2`,
+  far down. `completed task (#14)` is empty, not it. Scroll with Space.
 
 ## What if
 
@@ -29,6 +32,7 @@ Her question: "Why does every task start on a fresh `main` and a new branch?"
 
 - `git status` before every `switch`, `pull` and `commit`. It costs a second.
 - `--ff-only` is a safety catch: git only moves `main` forward or says no.
+- `git log --oneline` shows one line per commit, newest on top.
 - The short code in `git log --oneline` is the commit's SHA, its name.
 
 ## Links

@@ -6,6 +6,8 @@ Her question: "What does `.gitignore` do, and what can't it do?"
 ## Ladder
 
 - Lines: "Which file names would each line catch?"
+  → "What does the `#` comment above each group say?" `.tasks/` is the mentor's workspace,
+  the two Claude files are personal Claude settings, `.DS_Store` is macOS junk.
 - `.env` vs `password.txt`: "Which of the two names is in `.gitignore`?"
 - Already pushed (question 3): "Where is the file now? Only on your computer?"
   → "Does `.gitignore` change old commits?"

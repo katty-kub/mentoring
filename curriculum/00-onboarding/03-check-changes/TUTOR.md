@@ -13,8 +13,9 @@ Her question: "How do you know exactly what goes into a commit, before you make 
 ## Typical mistakes
 
 - `git diff` is empty after `git add`: she thinks the change is gone. Ask what `--staged` shows.
-- Runs `git add .` out of habit: `notes.txt` gets staged. Don't fix it with `restore`:
-  delete `notes.txt`, then ask what `git status` shows.
+- Runs `git add .` out of habit: `notes.txt` gets staged. Don't fix it with `restore`.
+  Deleting it is not enough: it stays staged. Delete `notes.txt`, then `git add notes.txt`
+  (stages the deletion). Ask what `git status` shows now.
 - Edits the task comments instead of the code line.
 
 ## What if
