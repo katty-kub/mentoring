@@ -24,7 +24,7 @@
 // Proč na tom záleží: review je normální. Push (odeslání) do stejné branch PR sám aktualizuje.
 
 const teamName = "Katy";
-const greeting = "Helo, " + teamName + "!";
+const greeting = "Hello, " + teamName + "!";
 console.log(greeting);
 
 // --- Otázky: odpověz pod každou ---
