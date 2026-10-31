@@ -29,16 +29,16 @@ console.log("Hi, " + name + "!");
 // --- Otázky: odpověz pod každou ---
 
 // 1. Krok 3 funguje jen před commitem. Co uděláš, když už jsi na main commitla?
-// Odpověď:
+// Odpověď: Zastavím se, nebudu nic mazat ani posílat na GitHub a požádám tutora o pomoc. Pošlu mu přesnou hlášku a výpis git status.
 
 // 2. Rozbila nebo smazala něco některá hláška z kroků 4–7? Jak to poznáš?
-// Odpověď:
+// Odpověď: Git nic nesmazal ani nerozbil oveřila jsem si to prikazem git status
 
 // 3. Zpráva o pomoc, když git hlásí "push rejected". Napiš ji: čeho chceš dosáhnout,
 //    poslední příkaz, přesná chyba, výstup git status, odkaz na PR.
-// Odpověď:
+// Odpověď:Snažím se dokončit úkol 06 a odeslat větev training/when-git-says-no., Poslední příkaz: git push, Přesná chyba: [sem bych zkopírovala přesnou hlášku z terminálu], git status: [sem bych vložila výpis], PR: zatím není otevřený
 
 // 4. Projdi "Před každým push" v README.md. Který bod nejspíš zapomeneš?
-// Odpověď:
+// Odpověď: Nejspíš zapomenu před pushem zkontrolovat git status, abych ověřila správnou větev a změněné soubory.
 
 // Hotovo, když: PR (žádost o sloučení) je merged (sloučený) a SUMMARY.md je na main.
