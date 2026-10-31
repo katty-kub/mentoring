@@ -22,7 +22,7 @@
 // TODO (krok 3): vypiš své jméno
 console.log("Ahoj, jsem Katy.");
 // TODO (krok 3): vypiš, proč se učíš programovat
- console.log("Baví mě tvořit vlastní aplikace a učit se, jak věci v kódu fungují.");
+console.log("Baví mě tvořit vlastní aplikace a učit se, jak věci v kódu fungují.");
 // TODO (krok 3): vypiš jednu věc, kterou chceš za tři měsíce vytvořit
 console.log("Chci vytvořit vlastní aplikaci a učit se při tom programovat.");
 // --- Otázky: odpověz pod každou ---
