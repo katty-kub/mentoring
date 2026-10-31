@@ -28,16 +28,16 @@ console.log("Fresh main, new branch.");
 // --- Otázky: odpověz pod každou ---
 
 // 1. Proč git status jako první, ještě před git switch?
-// Odpověď:
+// Odpověď: Git Status mi ukáže stav mé práce, zda nemám něco rozdělané- vypíše mi stav mé práce, než si vytvořím novou větev, kdybych přeskočila, neuložené soubory by se mi přenesly na mojí novou branch anebo na jinou, taky by mi je git odmítl přepnout a ja bych se stratila a nevěděla proč
 
 // 2. --ff-only znamená fast-forward only (jen posun dopředu). Co tím git odmítne udělat?
-// Odpověď:
+// Odpověď: Odmítne spojit větve, když se moje historie a Github neshodují.
 
 // 3. Co je jeden řádek v git log --oneline? Co je to číslo na začátku?
-// Odpověď:
+// Odpověď: Odpověď: Jeden řádek v git log --oneline je jeden commit. Číslo na začátku je SHA (čárový kód commitu) a text za ním je název commitu (commit message).
 
 // 4. Podle README jsi jednou spustila git clone a git config. Kdy je spustíš znovu?
-// Odpověď:
+// Odpověď: git clone už pro tohle repo nespustím, změny stahuju přes git pull. Znovu ho spustím, když budu na novém počítači. git config stačí jednou na počítači, znovu ho spustím, když budu na novém počítači nebo si chci změnit jméno či e-mail.
 
 // Hotovo, když: PR je merged (sloučený) a git log --oneline na main
 // má nahoře feat(onboarding): solve safe-start.
