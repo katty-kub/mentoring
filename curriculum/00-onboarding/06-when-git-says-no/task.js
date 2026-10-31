@@ -23,7 +23,7 @@
 //
 // Proč na tom záleží: oprava neznámé chyby naslepo může smazat tvou i cizí práci.
 
-const name = "";
+const name = "Katy";
 console.log("Hi, " + name + "!");
 
 // --- Otázky: odpověz pod každou ---
