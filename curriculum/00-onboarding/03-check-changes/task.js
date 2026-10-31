@@ -18,18 +18,18 @@
 //
 // Proč na tom záleží: git add . přidá všechno, i co tam nepatří. Kontrola trvá 5 sekund.
 
-const favoriteFruit = "apple";
+const favoriteFruit = "banana";
 console.log(favoriteFruit);
 
 // --- Otázky: odpověz pod každou ---
 
 // 1. Svými slovy: jaký je rozdíl mezi git diff a git diff --staged?
-// Odpověď:
+// Odpověď: git diff ukazuje změny, které ještě nejsou ve stage, git diff --staged ukazuje změny které už jsou ve stagged a půjdou do commitu.
 
 // 2. Proč git diff v kroku 4 neukázal notes.txt?
-// Odpověď:
+// Odpověď: Soubor notes.txt ukázal Git jako Untracket files, takže ho git diff neukázal ve stage proto, že je untracked a Git zatím nesleduje jeho obsah.„Untracked files“ je ve výpisu git status.
 
 // 3. Co by v kroku 5 udělal git add . ? Odpověz slovy, nespouštěj ho.
-// Odpověď:
+// Odpověď:git add . by přidal všechny změněné soubory včetně notes.txt.
 
 // Hotovo, když: PR (žádost o sloučení) je merged (sloučený) a node <soubor> na main vypíše banana.
