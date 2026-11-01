@@ -35,9 +35,9 @@
 // --- Otázky: odpověz pod každou ---
 
 // 1. Spusť git shortlog -sne. Kolikrát tam jsi? Proč?
-// Odpověď:
+// Odpověď: // Odpověď: 15 commitů je pod mou noreply adresou. Dalších 5 je pod starým jménem a Yahoo emailem, proto je git shortlog vypisuje zvlášť.
 
 // 2. Co dělá pull.ff only? Přečti si "git help config" (hledej pull.ff) nebo se zeptej tutora.
-// Odpověď:
+// Odpověď: dovolí git pull jen tehdy, když Git může tvoji větev posunout rovně dopředu. Když se místní a vzdálená větev rozejdou, Git se zastaví místo automatického slučovacího commitu.
 
 // Hotovo, když: git config user.email vypíše tvou noreply adresu a tvůj PR je merged (sloučený).
