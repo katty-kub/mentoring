@@ -51,6 +51,7 @@ She reads code well; writing it is hard. Order: JS → TypeScript → web (TS) �
 - Messages and PR titles: `COMMITS.md`. Squash and merge only; the squash message is the PR title.
 - Branch per batch of 1–3 tasks: `<module>/<first-task>` (`data-types/pin-check`). Risky practice: `practice/*`.
   Onboarding: one task = one branch `training/<task>` = one PR. Only the git commands in its `TUTOR.md`.
+  Exception: `fix-conflict` works on the branch of her conflicted PR. No new branch, no new PR.
   Onboarding extended: one task = one branch `onboarding/<task>` = one PR (merging is the lesson).
 - One `solve` commit per task; practice and merge commits may sit beside it (squash cleans).
   Push when the task is done. Stage explicit paths only. Her steps: `README.md`.

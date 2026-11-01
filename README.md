@@ -44,13 +44,15 @@ Tutor se ptá, ty spouštíš.
 6. `git status`, pak `git switch main && git pull --ff-only`. Další dávka = nová branch.
    Na sloučenou branch se nevracej.
 
-PR hlásí conflict (konflikt)? Stop: napiš tutorovi zprávu o pomoc, jako v `06-when-git-says-no`.
+PR hlásí conflict (konflikt)? Postup znáš z `07-fix-conflict`.
+Nejsi si jistá? Stop: napiš tutorovi zprávu o pomoc, jako v `06-when-git-says-no`.
 Vyřešíte to spolu. Mentor je až poslední možnost.
 Po posledním tasku modulu: napiš `SUMMARY.md` modulu, svůj tahák.
 
 ## Onboarding: jeden task = jedna branch
 
 V `00-onboarding` má každý task svou branch a svůj PR. Příkazy spouštěj v root (kořeni) repa.
+Výjimka: `07-fix-conflict` opravuje tvůj existující PR na jeho branchi. Kroky jsou v tasku.
 `<soubor>` = `task.js` toho tasku, s celou cestou: `curriculum/00-onboarding/…/task.js`.
 
 **Start jako vždy:**
@@ -125,6 +127,9 @@ Jen tyhle. Jiné git commands v onboardingu nepoužívej.
 | `git push` | pošle další commity na GitHub. PR se aktualizuje | 10 · `nutnost, denně` | review-fix |
 | `git clone <adresa>` | stáhne repo z GitHubu | 7 · `nutnost` | safe-start |
 | `git config --global user.name "…"` | nastaví jméno do commitů. Stejně `user.email` | 7 · `nutnost` | safe-start |
+| `git switch <branch>` | přepne na branch, která už existuje, třeba tvého PR | 10 · `nutnost, denně` | fix-conflict |
+| `git merge main` | sloučí `main` do tvé branche | 8 · `nutnost` | fix-conflict |
+| `git merge --abort` | zruší rozdělaný merge, vrátí stav před ním | 7 · `nutnost` | fix-conflict |
 
 ### Navíc v `00-onboarding-extended`
 
@@ -145,7 +150,6 @@ Volitelné, po mentoringu. Podrobnosti: [COMMANDS.md](curriculum/00-onboarding-e
 | `git shortlog -sne` | kdo udělal kolik commitů | 2 · `zajímavost` | git-config |
 | `git ls-remote --tags origin` | co má GitHub, bez stahování | 1 · `zajímavost` | clean-history |
 | `git commit` | bez `-m`: popis napíšeš v editoru | 7 · `nutnost` | git-config |
-| `git switch <branch>` | přepne na jakoukoli branch | 10 · `nutnost, denně` | branches |
 | `git branch -d <branch>` | smaže branch, jen když je sloučená | 8 · `nutnost` | git-config |
 | `git branch -D <branch>` | smaže branch vždy, i nesloučenou | 8 · `nutnost` ⚠️ | git-config |
 | `git stash` | odloží neuložené změny stranou | 7 · `nutnost` | branches |
@@ -154,8 +158,6 @@ Volitelné, po mentoringu. Podrobnosti: [COMMANDS.md](curriculum/00-onboarding-e
 | `git fetch` | stáhne novinky z GitHubu. Tvoje branche nezmění | 8 · `nutnost` | git-config |
 | `git fetch --prune` | totéž, navíc zapomene smazané branche | 8 · `nutnost` | git-config |
 | `git pull` | `fetch` a pak přidá novinky do tvé branche | 10 · `nutnost, denně` | git-config |
-| `git merge main` | sloučí `main` do tvé branche | 8 · `nutnost` | merge-conflict |
-| `git merge --abort` | zruší rozdělaný merge | 7 · `nutnost` | merge-conflict |
 | `git rebase main` | dá tvoje commity znovu na konec `main` | 7 · `nutnost` | rebase-on-main |
 | `git rebase --continue` | po vyřešení conflictu pokračuje v rebase | 7 · `nutnost` | rebase-on-main |
 | `git rebase --abort` | zruší rozdělaný rebase | 7 · `nutnost` | clean-history |
