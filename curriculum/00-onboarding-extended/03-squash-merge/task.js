@@ -36,7 +36,7 @@
 // --- Otázky: odpověz pod každou ---
 
 // 1. PR #14 měl title "completed task". Co vidíš u jeho commitu na main? Proč?
-// Odpověď:
+// Odpověď: na main vidím commit 'completed task (#14)'. Při squash merge použil název PR „completed task“ jako commit message a přidal číslo PR. Název PR proto ovlivnil, jak commit vypadá v historii.
 
 // 2. Co změní každé z nastavení v kroku 4?
 // Odpověď:
