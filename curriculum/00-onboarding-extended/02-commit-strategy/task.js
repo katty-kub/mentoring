@@ -30,47 +30,52 @@
 
 // 1. K čemu je dobrá history s dobrými messages? Najdi aspoň tři situace.
 // Odpověď:
+// 1. rychle pochopit, co se změnilo a ve které části projektu
+// 2. najít commit, který mohl způsobit chybu, a případně ho vrátit
+// 3. vybrat správný commit pro revert nebo cherry-pick.
 
 // --- Tabulka: stará message → nová message ---
 // 1. 400c987 Add README
-//    nová:
+//    nová: docs(readme): add project documentation
 // 2. cc507d2 Add tutor setup and first curriculum tasks
-//    nová:
+//    nová: feat(tutor): add tutor setup
 // 3. 3c6f040 Print types of variables in task.js - "completed assignments"
-//    nová:
+//    nová: feat(data-types): solve print-types
 // 4. c7a0186 first pull request
-//    nová:
+//    nová: feat(onboarding): solve first-pull-request
 // 5. 72ec1a7 feat: complete javascript task 2
-//    nová:
+//    nová:feat(data-types): solve text-to-number
 // 6. 472d164 feat: complete javascript task 3
-//    nová:
+//    nová:feat(data-types): solve plus-or-minus
 // 7. a8c9497 feat: complete javascript task 4
-//    nová:
+//    nová:feat(data-types): solve text-to-nan
 // 8. b2786af Restore starter task for printing value types
-//    nová:
+//b2786af Restore starter task for printing value types
+//    nová:revert(data-types): solve print-types
+// Reverts 3c6f040.
 // 9. f677172 Solve print types exercise
-//    nová:
+//    nová:feat(data-types): solve print-types
 // 10. 20e9336 Restore starter task for text to number
-//    nová:
+//    nová:revert(data-types): solve text-to-number
 // 11. f1feb8c Restore starter task for coercion predictions
-//    nová:
+//    nová:revert(data-types): solve plus-or-minus
 // 12. c4dcecb Solve text to number exercise
-//    nová:
+//    nová:feat(data-types): solve text-to-number
 // 13. 60f83f7 Solve plus or minus predictions
-//    nová:
+//    nová:feat(data-types): solve plus-or-minus
 // 14. d94194b Solve check NaN task
-//    nová:
+//    nová:feat(data-types): solve check-nan
 // 15. e79fc75 Solve text to NaN exercise (#6)
-//    nová:
+//    nová:feat(data-types): solve text-to-nan (#6)
 // 16. 80ab957 Katy/10 trim greeting (#16)
-//    nová:
+//    nová:feat(data-types): solve trim-greeting and 2 more (#16)
 // 17. 5f62309 Solve number or parseInt exercise (#13)
-//    nová:
+//    nová:feat(data-types): solve number-or-parseint (#13)
 // 18. b97f1b3 Katy/09 truthy falsy (#15)
-//    nová:
+//    nová: feat(data-types): solve truthy-falsy (#15)
 // 19. f6a20c2 completed task (#14)
-//    nová:
+//    nová:feat(data-types): solve null-or-undefined (#14)
 // 20. e12e626 Translate learner docs and task comments to Czech (#17)
-//    nová:
+//    nová:nová: docs(curriculum): translate learner materials to Czech (#17)
 
 // Hotovo, když: každý řádek "nová:" má message podle COMMITS.md a tvůj PR je merged.
