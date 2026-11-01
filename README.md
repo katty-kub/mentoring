@@ -1,7 +1,7 @@
 # Začni tady
 
 Tady se učíš programovat, jeden malý task (úkol) po druhém.
-Cesta: JavaScript → JavaScript v browseru (prohlížeči) → React → TypeScript → Node.js + Express.
+Cesta: JavaScript → TypeScript → web v browseru (prohlížeči) → React → Node.js + Express.
 
 **Claude je tvůj tutor (lektor), ne řešitel.** Ptá se. Nikdy nepíše tvůj kód.
 Co vymyslíš sama, to si zapamatuješ.
@@ -25,8 +25,9 @@ Tvých pět cílů:
    Volitelný task `git-config` to po mentoringu doladí.
 3. `gh auth login`.
 4. `git clone https://github.com/katty-kub/mentoring.git && cd mentoring`.
-5. V editoru vypni AI suggestions (návrhy od AI). VS Code: tohle repo (repozitář) to dělá samo.
-6. Spusť `claude`. Klikni na „Trust the folder“.
+5. `npm install`: nainstaluje TypeScript pro tasky v `02-typescript`.
+6. V editoru vypni AI suggestions (návrhy od AI). VS Code: tohle repo (repozitář) to dělá samo.
+7. Spusť `claude`. Klikni na „Trust the folder“.
 
 ## Každá dávka tasků
 
@@ -192,7 +193,7 @@ Pořadí tasků: [curriculum/ROADMAP.md](curriculum/ROADMAP.md).
 
 Tutorovi můžeš psát i česky.
 
-V každé složce tasku: `task.js` je tvůj. Svůj kód piš pod comments (komentáře) se zadáním. Ty neměň.
+V každé složce tasku: `task.js` (v TypeScriptu `task.ts`) je tvůj. Svůj kód piš pod comments (komentáře) se zadáním. Ty neměň.
 `TUTOR.md` jsou nápovědy pro tutora. Nečti ho: zkazíš si tím nápovědy.
 
 ## Jak vyřešit task: pět kroků
@@ -219,9 +220,10 @@ Neumíš napsat příklady? Přečti si task znovu, nebo se zeptej.
 | Dělám **to samé dvakrát**? | function (funkci) |
 
 **3. Code (napiš kód).** Jdi do složky tasku: `cd`. Přepiš jeden comment na kód. Spusť `node task.js`.
-Pak další comment.
+Pak další comment. TypeScript task: `node task.ts`.
 
 **4. Check (zkontroluj).** Porovnej výsledek s řádkem `má vypsat` dole.
+TypeScript task: spusť i `npx tsc`. Nevypíše nic = žádná chyba v types (typech).
 Vyzkoušej své příklady a svůj edge case. Pak vrať původní input.
 Špatně? Nehádej. Vypiš hodnoty přes `console.log` těsně před tím místem. Najdi, **kde** se to rozbije.
 
@@ -230,6 +232,7 @@ co se stane s edge case.
 Neumíš nějakou část vysvětlit? Vrať se k tomu kódu.
 
 **Hotovo, když** `node task.js` vypíše, co má, i pro tvoje příklady, a ty jsi to vysvětlila.
+TypeScript task: navíc `npx tsc` nevypíše nic.
 
 ## Když se zasekneš
 
@@ -250,6 +253,13 @@ a dej si pauzu. Příště napiš **continue**. To je normální.
 | task | úkol |
 | value | hodnota |
 | type | typ (number = číslo, string = text, boolean = true/false) |
+| type annotation | typ napsaný za jménem: `let age: number = 30` |
+| inference | TypeScript pozná typ sám, z hodnoty |
+| type alias | jméno pro tvar objektu: `type Book = { title: string }` |
+| optional | nepovinné pole, může chybět: `phone?: string` |
+| union | jedno, nebo druhé: `string \| number` |
+| literal type | jen jedna přesná hodnota: `"open"` |
+| narrowing | po `if` TypeScript ví, který typ to je |
 | array | pole, seznam hodnot `[5, 2, 8]` |
 | loop | smyčka, opakování |
 | condition | podmínka (`if`) |

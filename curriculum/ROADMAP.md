@@ -2,6 +2,7 @@
 
 Jeden task (úkol) po druhém. Pořadí je jen návrh: můžeš přeskočit dopředu nebo se vrátit.
 Task je hotový, když je v commitu a `node task.js` vypíše, co říká jeho comment `má vypsat`.
+TypeScript task (`task.ts`): `node task.ts` vypíše `má vypsat` a `npx tsc` nevypíše nic.
 Predict (předpověz) tasky `má vypsat` nemají: tam musí mít každý řádek tvůj tip.
 Git tasky v onboardingu ho nemají taky. Hotovo: odpovědi jsou v commitu
 a příkaz z řádku `Hotovo, když` ukáže, co má.
@@ -61,17 +62,53 @@ Všechno dohromady:
 23. `01-javascript/01-data-types/23-capstone`
 24. Napiš `01-javascript/01-data-types/SUMMARY.md`: svůj tahák.
 
-### Co přijde dál
+## Level 2: TypeScript
+
+TypeScript = JavaScript s types (typy). Najde chybu dřív, než kód spustíš.
+Jednou, v root (kořeni) repa: `npm install`. V tasku pak `node task.ts` a `npx tsc`.
+`npx tsc` nevypíše nic = žádná chyba v types.
+
+### 01 TS basics (základy TypeScriptu)
+
+Types (typy) hodnot:
+
+1. `02-typescript/01-ts-basics/01-annotate-values`
+2. `02-typescript/01-ts-basics/02-guess-the-type`
+3. `02-typescript/01-ts-basics/03-catch-the-fee`
+4. `02-typescript/01-ts-basics/04-typed-list`
+
+Objects (objekty) a chybějící hodnoty:
+
+5. `02-typescript/01-ts-basics/05-book-type`
+6. `02-typescript/01-ts-basics/06-optional-field`
+7. `02-typescript/01-ts-basics/07-no-phone`
+
+Jedno, nebo druhé:
+
+8. `02-typescript/01-ts-basics/08-id-or-text`
+9. `02-typescript/01-ts-basics/09-door-status`
+
+Functions (funkce):
+
+10. `02-typescript/01-ts-basics/10-call-with-number`
+11. `02-typescript/01-ts-basics/11-return-type`
+
+Všechno dohromady:
+
+12. `02-typescript/01-ts-basics/12-capstone`
+13. Napiš `02-typescript/01-ts-basics/SUMMARY.md`: svůj tahák.
+
+## Co přijde dál
 
 Tvůj mentor je připravuje.
 
 | Level | Moduly |
 |---|---|
 | 1 JavaScript | 02 conditions (podmínky) · 03 loops (smyčky) · 04 functions (funkce) · 05 arrays (pole) · 06 objects (objekty) · 07 scope & closures (rozsah platnosti a uzávěry) · 08 errors & debugging (chyby a hledání chyb) |
-| 2 JavaScript pro web | 01 DOM (stránka jako strom) · 02 events (události) · 03 modules (moduly) · 04 async & fetch (asynchronní kód a stahování dat) · 05 browser debugger (ladění v prohlížeči) |
-| 3 React | 01 components (komponenty) · 02 props (vstupy komponenty) · 03 state (stav) · 04 effects (efekty) · 05 forms (formuláře) · 06 lists (seznamy) |
-| 4 TypeScript | 01 typing (typování) tvého vlastního JavaScriptu · 02 React s TypeScriptem |
-| 5 Node.js + Express | malý skutečný projekt, jako v opravdové práci |
+| 2 TypeScript | další moduly po 01 TS basics |
+| 3 Web v TypeScriptu | 01 DOM (stránka jako strom) · 02 events (události) · 03 modules (moduly) · 04 async & fetch (asynchronní kód a stahování dat) · 05 browser debugger (ladění v prohlížeči) |
+| 4 React s TypeScriptem | 01 components (komponenty) · 02 props (vstupy komponenty) · 03 state (stav) · 04 effects (efekty) · 05 forms (formuláře) · 06 lists (seznamy) |
+| 5 Node.js + Express | malý skutečný projekt v TypeScriptu, jako v opravdové práci |
 
 Od modulu 04 (functions) pracuj nejdřív **sama**. Tutora zavolej na review (kontrolu), nebo když jsi 20 minut zaseklá.
 

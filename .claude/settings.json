@@ -4,6 +4,8 @@
     "deny": [
       "Edit(curriculum/**/task.js)",
       "Write(curriculum/**/task.js)",
+      "Edit(curriculum/**/task.ts)",
+      "Write(curriculum/**/task.ts)",
       "Edit(curriculum/**/SUMMARY.md)",
       "Write(curriculum/**/SUMMARY.md)",
       "Bash(git add*)",
