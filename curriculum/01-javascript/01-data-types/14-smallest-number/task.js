@@ -1,9 +1,9 @@
-// Print the smallest number.
+// Vypiš nejmenší číslo.
 // [5, 2, 8] → 2
 
 const numbers = [5, 2, 8];
 
-// your code
+// tvůj kód
 
 
-// node task.js should print: 2
+// node task.js má vypsat: 2

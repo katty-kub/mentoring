@@ -1,5 +1,8 @@
 # Tutor: first pull request
 
+Method: `../TUTOR.md`. New: `git status`, `git switch`, `git add`, `git commit`, `git push -u`.
+Her question: "Why does all work go through a pull request, not straight to `main`?"
+
 ## Ladder
 
 - Printing: "What have you seen in code that shows something in the terminal?"
@@ -12,7 +15,7 @@
 ## Typical mistakes
 
 - `node task.js` from the repo root: file not found. Ask: "Which folder is your terminal in?"
-- Committing on `main`, no branch made. Ask her to run `git branch --show-current`.
+- Committing on `main`, no branch made. Ask her what the first line of `git status` says.
 - No quotes around the text in `console.log`.
 - First `git push` without `-u origin <branch>`.
 
@@ -22,7 +25,6 @@
 
 ## Tips
 
-- `git log --oneline` shows one line per commit. Her first commit is there now.
 - `console.log` prints several things at once: two values, separated by a comma.
 - Everyone has committed to the wrong branch once. `git switch -c` is the habit that saves you.
 

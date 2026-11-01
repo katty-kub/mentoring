@@ -1,13 +1,18 @@
-// Print isNaN(input). Then print Number.isNaN(input).
+// Vypiš isNaN(input). Pak vypiš Number.isNaN(input).
 // "abc" → true false
 
 const input = "12px"
 
-// your code
+// tvůj kód
+
 
 console.log(isNaN(input));
 console.log(Number.isNaN(input));
 // node task.js should print:
+
+
+// node task.js má vypsat:
+
 // true
 // false
 

@@ -9,7 +9,6 @@ const number = Number(input);
 console.log(number); //NaN
 console.log(typeof number); //number
 
-
 // node task.js should print:
 // NaN
 // number

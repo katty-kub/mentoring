@@ -1,9 +1,9 @@
-// Print the largest number. All numbers are negative.
+// Vypiš největší číslo. Všechna čísla jsou záporná.
 // [-5, -2, -9] → -2
 
 const numbers = [-5, -2, -9];
 
-// your code
+// tvůj kód
 
 
-// node task.js should print: -2
+// node task.js má vypsat: -2

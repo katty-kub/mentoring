@@ -1,9 +1,9 @@
-// Print all numbers from largest to smallest.
+// Vypiš všechna čísla od největšího po nejmenší.
 // [5, 2, 8] → 8 5 2
 
 const numbers = [5, 2, 8];
 
-// your code
+// tvůj kód
 
 
-// node task.js should print: 8 5 2
+// node task.js má vypsat: 8 5 2

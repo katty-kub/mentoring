@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noEmit": true,
+    "target": "esnext",
+    "module": "nodenext",
+    "moduleDetection": "force",
+    "erasableSyntaxOnly": true,
+    "types": ["node"]
+  },
+  "include": ["curriculum/**/*.ts"]
+}

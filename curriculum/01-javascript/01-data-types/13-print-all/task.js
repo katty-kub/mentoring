@@ -1,12 +1,12 @@
-// Print every number, one per line.
+// Vypiš každé číslo, každé na vlastní řádek.
 // [5, 2, 8] → 5 2 8
 
 const numbers = [5, 2, 8];
 
-// your code
+// tvůj kód
 
 
-// node task.js should print:
+// node task.js má vypsat:
 // 5
 // 2
 // 8

@@ -1,21 +1,36 @@
-# Roadmap
+# Roadmap (plán cesty)
 
-One task at a time. This order is a suggestion: you may skip ahead or go back.
-A task is finished when it's committed, and `node task.js` prints what its `should print` comment says.
-Predict tasks have no `should print`: there, every line needs your guess.
-Onboarding has none either: there, the commit is enough.
+Jeden task (úkol) po druhém. Pořadí je jen návrh: můžeš přeskočit dopředu nebo se vrátit.
+Task je hotový, když je v commitu a `node task.js` vypíše, co říká jeho comment `má vypsat`.
+TypeScript task (`task.ts`): `node task.ts` vypíše `má vypsat` a `npx tsc` nevypíše nic.
+Predict (předpověz) tasky `má vypsat` nemají: tam musí mít každý řádek tvůj tip.
+Git tasky v onboardingu ho nemají taky. Hotovo: odpovědi jsou v commitu
+a příkaz z řádku `Hotovo, když` ukáže, co má.
 
-## Level 0: Onboarding
+## Level 0: Onboarding (začátek)
+
+Povinné, hned teď. Git, jak ho potřebuješ v týmu. Tasky dělej popořadě.
+Každý task má svou branch a svůj pull request (žádost o sloučení):
+[README → Onboarding](../README.md#onboarding-jeden-task--jedna-branch).
 
 1. `00-onboarding/01-first-pull-request`
+2. `00-onboarding/02-safe-start`
+3. `00-onboarding/03-check-changes`
+4. `00-onboarding/04-keep-secrets`
+5. `00-onboarding/05-review-fix`
+6. `00-onboarding/06-when-git-says-no`
+7. Napiš `00-onboarding/SUMMARY.md` (v PR tasku 06): tvůj tahák. Tutor tě provede.
+8. `00-onboarding/07-fix-conflict`
+
+Zbytek gitu přijde později: [Po mentoringu](#po-mentoringu-onboarding-extended-volitelné).
 
 ## Level 1: JavaScript
 
-### 01 Data types
+### 01 Data types (datové typy)
 
-Your first `if` and your first loop come here. Modules 02 and 03 go deeper.
+Tady přijde tvůj první `if` a tvůj první loop (smyčka). Moduly 02 a 03 jdou víc do hloubky.
 
-One value, no loop:
+Jedna value (hodnota), bez loopu:
 
 1. `01-javascript/01-data-types/01-print-types`
 2. `01-javascript/01-data-types/02-text-to-number`
@@ -30,7 +45,7 @@ One value, no loop:
 11. `01-javascript/01-data-types/11-pin-check`
 12. `01-javascript/01-data-types/12-fix-the-total`
 
-Lists, with a loop:
+Lists (seznamy), s loopem:
 
 13. `01-javascript/01-data-types/13-print-all`
 14. `01-javascript/01-data-types/14-smallest-number`
@@ -43,43 +58,120 @@ Lists, with a loop:
 21. `01-javascript/01-data-types/21-sort-big-numbers`
 22. `01-javascript/01-data-types/22-only-real-numbers`
 
-All together:
+Všechno dohromady:
 
 23. `01-javascript/01-data-types/23-capstone`
-24. Write `01-javascript/01-data-types/SUMMARY.md`: your cheat sheet.
+24. Napiš `01-javascript/01-data-types/SUMMARY.md`: svůj tahák.
 
-### Coming next
+## Level 2: TypeScript
 
-Your mentor is preparing these.
+TypeScript = JavaScript s types (typy). Najde chybu dřív, než kód spustíš.
+Jednou, v root (kořeni) repa: `npm install`. V tasku pak `node task.ts` a `npx tsc`.
+`npx tsc` nevypíše nic = žádná chyba v types.
 
-| Level | Modules |
+### 01 TS basics (základy TypeScriptu)
+
+Types (typy) hodnot:
+
+1. `02-typescript/01-ts-basics/01-annotate-values`
+2. `02-typescript/01-ts-basics/02-guess-the-type`
+3. `02-typescript/01-ts-basics/03-catch-the-fee`
+4. `02-typescript/01-ts-basics/04-typed-list`
+
+Objects (objekty) a chybějící hodnoty:
+
+5. `02-typescript/01-ts-basics/05-book-type`
+6. `02-typescript/01-ts-basics/06-optional-field`
+7. `02-typescript/01-ts-basics/07-no-phone`
+
+Jedno, nebo druhé:
+
+8. `02-typescript/01-ts-basics/08-id-or-text`
+9. `02-typescript/01-ts-basics/09-door-status`
+
+Functions (funkce):
+
+10. `02-typescript/01-ts-basics/10-call-with-number`
+11. `02-typescript/01-ts-basics/11-return-type`
+
+Všechno dohromady:
+
+12. `02-typescript/01-ts-basics/12-capstone`
+13. Napiš `02-typescript/01-ts-basics/SUMMARY.md`: svůj tahák.
+
+## Co přijde dál
+
+Tvůj mentor je připravuje.
+
+| Level | Moduly |
 |---|---|
-| 1 JavaScript | 02 conditions · 03 loops · 04 functions · 05 arrays · 06 objects · 07 scope & closures · 08 errors & debugging |
-| 2 JavaScript for the web | 01 DOM · 02 events · 03 modules · 04 async & fetch · 05 the browser debugger |
-| 3 React | 01 components · 02 props · 03 state · 04 effects · 05 forms · 06 lists |
-| 4 TypeScript | 01 typing your own JavaScript · 02 React with TypeScript |
-| 5 Node.js + Express | a small real project, worked like in a real job |
+| 1 JavaScript | 02 conditions (podmínky) · 03 loops (smyčky) · 04 functions (funkce) · 05 arrays (pole) · 06 objects (objekty) · 07 scope & closures (rozsah platnosti a uzávěry) · 08 errors & debugging (chyby a hledání chyb) |
+| 2 TypeScript | další moduly po 01 TS basics |
+| 3 Web v TypeScriptu | 01 DOM (stránka jako strom) · 02 events (události) · 03 modules (moduly) · 04 async & fetch (asynchronní kód a stahování dat) · 05 browser debugger (ladění v prohlížeči) |
+| 4 React s TypeScriptem | 01 components (komponenty) · 02 props (vstupy komponenty) · 03 state (stav) · 04 effects (efekty) · 05 forms (formuláře) · 06 lists (seznamy) |
+| 5 Node.js + Express | malý skutečný projekt v TypeScriptu, jako v opravdové práci |
 
-From module 04 (functions) on, work **solo first**. Call the tutor for a review, or after 20 minutes stuck.
+Od modulu 04 (functions) pracuj nejdřív **sama**. Tutora zavolej na review (kontrolu), nebo když jsi 20 minut zaseklá.
 
-## Task types
+## Po mentoringu: Onboarding extended (volitelné)
 
-Each module goes from reading code to writing it alone.
+Volitelné. Vrať se k tomu, až mentoring skončí. Tutor ti to sám nenabídne: napiš **start git-config**.
 
-| Type | You do |
+Git na tomhle repu, doopravdy. Opravíš, co je v něm špatně. Hlavně se naučíš opravit, co se rozbije.
+Navazuje na `01-first-pull-request`. Tasky dělej popořadě: každý staví na stavu repa po tom předchozím.
+Každý task má svou branch a svůj PR: [README → Onboarding extended](../README.md#onboarding-extended-jeden-task--jedna-branch).
+
+Než začneš, přečti si [`COMMANDS.md`](00-onboarding-extended/COMMANDS.md):
+všechny příkazy, které tu procvičíš, co dělají a jak moc je v práci potřebuješ.
+
+Každodenní práce:
+
+1. `00-onboarding-extended/01-git-config`
+2. `00-onboarding-extended/02-commit-strategy`
+3. `00-onboarding-extended/03-squash-merge`
+4. `00-onboarding-extended/04-stage-and-diff`
+5. `00-onboarding-extended/05-ignore-files`
+6. `00-onboarding-extended/06-branches`
+7. `00-onboarding-extended/07-fetch-and-pull`
+
+Konflikty a záchrana:
+
+8. `00-onboarding-extended/08-merge-conflict`
+9. `00-onboarding-extended/09-rebase-on-main`
+10. `00-onboarding-extended/10-reset-modes`
+11. `00-onboarding-extended/11-reflog`
+12. `00-onboarding-extended/12-tidy-commits`
+
+Historie a `main`:
+
+13. `00-onboarding-extended/13-clean-history`
+14. `00-onboarding-extended/14-bad-merge`
+15. `00-onboarding-extended/15-protect-main`
+16. `00-onboarding-extended/16-revert-merge`
+17. Napiš `00-onboarding-extended/SUMMARY.md`: tvůj tahák „Když se něco rozbije“. Tutor tě provede.
+
+## Task types (typy tasků)
+
+Každý modul vede od čtení kódu k tomu, že ho napíšeš sama.
+
+| Type | Co děláš |
 |---|---|
-| **Guided** | follow the steps (onboarding only) |
-| **Predict** | read code, write what it prints, run it, explain surprises |
-| **Modify** | change working code to do something new |
-| **Parsons** | put shuffled lines in order. One line doesn't belong |
-| **Make** | write code from a one-line task |
-| **Fix-the-bug** | read a bug report, find the cause, fix it |
-| **Capstone** | one task that uses the whole module |
+| **Guided** (s návodem) | jdeš podle kroků, jen v onboardingu |
+| **Predict** (předpověz) | čteš kód, napíšeš, co vypíše, spustíš ho, vysvětlíš překvapení |
+| **Modify** (uprav) | změníš funkční kód, aby dělal něco nového |
+| **Parsons** (poskládej) | seřadíš zamíchané řádky. Jeden řádek tam nepatří |
+| **Make** (vytvoř) | napíšeš kód podle zadání na jeden řádek |
+| **Fix-the-bug** (oprav chybu) | přečteš bug report (hlášení chyby), najdeš příčinu, opravíš ji |
+| **Rescue** (záchrana) | rozbiješ to podle kroků, opravíš to sama, bez kroků |
+| **Capstone** (závěrečný task) | jeden task, který použije celý modul |
 
-## Read more
+## Čti dál
+
+Docs (dokumentace) jsou anglicky. Pomůže ti překladač v prohlížeči.
 
 - JavaScript: [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) · [javascript.info](https://javascript.info)
 - React: [react.dev/learn](https://react.dev/learn)
 - TypeScript: [the TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
 - Node.js: [nodejs.org/learn](https://nodejs.org/en/learn) · Express: [the Express guide](https://expressjs.com/en/guide/routing.html)
-- Git: [GitHub: about pull requests](https://docs.github.com/en/pull-requests)
+- Git: [Pro Git book](https://git-scm.com/book/en/v2) · [GitHub: about pull requests](https://docs.github.com/en/pull-requests)
+- Commit messages (popisy commitů): [COMMITS.md](../COMMITS.md)

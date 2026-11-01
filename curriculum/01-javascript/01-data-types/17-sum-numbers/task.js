@@ -1,9 +1,9 @@
-// Print the sum of all numbers.
+// Vypiš součet všech čísel.
 // [5, 2, 8] → 15
 
 const numbers = [5, 2, 8];
 
-// your code
+// tvůj kód
 
 
-// node task.js should print: 15
+// node task.js má vypsat: 15
