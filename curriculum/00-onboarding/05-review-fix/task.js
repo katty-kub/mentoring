@@ -23,23 +23,23 @@
 //
 // Proč na tom záleží: review je normální. Push (odeslání) do stejné branch PR sám aktualizuje.
 
-const teamName = "Mentoring";
-const greeting = "Helo, " + teamName + "!";
+const teamName = "Katy";
+const greeting = "Hello, " + teamName + "!";
 console.log(greeting);
 
 // --- Otázky: odpověz pod každou ---
 
 // 1. Překlep jsi možná viděla už v kroku 2. Proč ho neopravit hned?
-// Odpověď:
+// Odpověď: v zadáni 2 bylo jen změnit jmeno
 
 // 2. Proč git push v kroku 7 stačil bez -u origin …?
-// Odpověď:
+// Odpověď:První git push s -u propojil training/review-fix s origin/training/review-fix, proto další git push už věděl, kam  se změny posílají.
 
 // 3. Proč neotevřít na opravu nový PR?
 // Odpověď:
 
 // 4. Tady merguješ sama. V týmu PR slučuje mentor. Proč?
-// Odpověď:
+// Odpověď:oprava ve stejné větvi aktualizuje původní PR, takže se nezakláda duplicitní.
 
 // --- Review (připomínky) k tvému PR. Čti až po kroku 4. ---
 // R1: V greeting je překlep "Helo". Oprav na "Hello".
