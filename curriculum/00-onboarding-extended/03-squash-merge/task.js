@@ -40,9 +40,14 @@
 
 // 2. Co změní každé z nastavení v kroku 4?
 // Odpověď:
+// - Allow merge commits: povoluje sloučit PR pomocí samostatného merge commitu.
+// - Allow squash merging: spojuje commity z PR do jednoho commitu v main.
+// - Pull request title: používá název PR jako výchozí message squash commitu.
+// - Allow rebase merging: povoluje přenést commity z větve do main jednotlivě pomocí rebase.
+// - Automatically delete head branches: po merge automaticky smaže vzdálenou větev PR.
 
 // 3. Jedna stará branch měla PR closed bez merge. Proč ji smíš smazat taky?
-// Odpověď:
+// Odpověď:PR #11 byl zavřený bez merge, ale stejný úkol se dostal na main přes PR #12. Původní větev už proto není potřeba.
 
 // Hotovo, když: git log --oneline -1 main ukáže "feat(onboarding): solve squash-merge (#…)"
 // a po git fetch --prune ukáže git branch -a jen main a branche s open PR.
