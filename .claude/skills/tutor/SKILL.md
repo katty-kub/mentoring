@@ -12,8 +12,10 @@ Pořadí tasků: `curriculum/ROADMAP.md`.
 **Hotový task**: definuje `ROADMAP.md`. Její práce je v `task.js` na `main`
 (`git show main:<cesta>/task.js`), nebo v commitu na její aktuální branchi.
 Nikdy nepíšeš soubory a nespouštíš git, který něco mění. Postup je v jejím `task.js` a v jejích commitech.
+TypeScript moduly (`02-typescript`): všude místo `task.js` platí `task.ts`.
 
 **Modul** = složka podle části branche před `/`: `data-types/pin-check` → `01-javascript/01-data-types`,
+`ts-basics/annotate-values` → `02-typescript/01-ts-basics`,
 `training/safe-start` → `00-onboarding`, `onboarding/git-config` → `00-onboarding-extended`.
 `practice/*` je cvičná branch: zeptej se, ke kterému tasku patří.
 **Aktuální task** = v tom modulu: task, který jmenuje ona, jinak první nehotový v `ROADMAP.md`.
@@ -112,6 +114,8 @@ Kód píše ona. Zasekne se → žebříček nápověd z output style.
 ## 6. Check (zkontroluj)
 
 Spustí `node task.js` a porovná výsledek s řádkem `má vypsat`.
+TypeScript task: `node task.ts`, pak `npx tsc`. Chyba v `tsc`? Ať ji přečte nahlas a řekne česky, co chce.
+Predict v TypeScriptu: tipy ověří najetím myší ve VS Code.
 Pak: „Jaký jiný input zkusíš? Co by měl vypsat?“ Změní input, spustí, vrátí ho zpátky.
 
 Nesedí to? Zeptej se: „Cos čekala? Kde by ti `console.log` ukázal hodnotu těsně předtím?“
@@ -122,7 +126,8 @@ Vysvětlí to v chatu. Polož jednu nebo dvě otázky z `## What if` v `TUTOR.md
 
 ## 8. Hotovo
 
-Hotovo = `node task.js` vypíše, co má, a ona to vysvětlila. Pak:
+Hotovo = `node task.js` vypíše, co má, a ona to vysvětlila. TypeScript: navíc `npx tsc` nevypíše nic
+a typy jsou v jejím kódu tam, kde je zadání chce. Výstup se často nezmění. Pak:
 
 1. Řekni jí dva nebo tři `## Tips` z `TUTOR.md`, česky.
 2. Capstone: teď napíše `SUMMARY.md` modulu, na této branchi.
@@ -132,7 +137,7 @@ Hotovo = `node task.js` vypíše, co má, a ona to vysvětlila. Pak:
    Hodnocení: `curriculum/00-onboarding/TUTOR.md` → Allowed commands,
    v extended `curriculum/00-onboarding-extended/COMMANDS.md`.
 3. Jmenuj soubory pro stage. Nikdy `git add -A`. Cesty jsou relativní ke složce tasku:
-   `git add task.js` (capstone: navíc `../SUMMARY.md`).
+   `git add task.js` nebo `git add task.ts` (capstone: navíc `../SUMMARY.md`).
    `pathspec did not match` → zeptej se, ve které složce je její terminál.
    Commit message (popis commitu) podle `COMMITS.md`: `feat(<modul>): solve <task>`.
 4. Pushne: `git push`. První push na této branchi: `git push -u origin <branch>`.

@@ -1,7 +1,7 @@
 # AGENTS.md
 
 A beginner learns to program here. Every file is for her. Her guide: `README.md`.
-She reads code well; writing it is hard. Order: JS → JS for the web → React → TypeScript → Node + Express.
+She reads code well; writing it is hard. Order: JS → TypeScript → web (TS) → React (TS) → Node + Express (TS).
 
 ## Rules
 
@@ -9,13 +9,14 @@ She reads code well; writing it is hard. Order: JS → JS for the web → React 
 - `task.js`: copy an existing one. One goal per task; a twist is its own next task.
   Input data only, no steps or hints. Predict and Fix-the-bug: also the code to read. Guided: steps.
   `//` comments ≤ 100 chars. Runs without error from day one.
+- `task.ts`: same rules. `npx tsc` is clean from day one too: a type error appears only after her change.
 - `TUTOR.md`: hints for the tutor, never the answer.
 - Docs: short imperative sentences. Each rule in one file; link, don't repeat.
 
 ## Language
 
 - She reads English at A1. Talk to her in Czech. Write her files in Czech:
-  `README.md`, `ROADMAP.md`, `COMMANDS.md`, `task.js` comments, the `tutor` skill.
+  `README.md`, `ROADMAP.md`, `COMMANDS.md`, `task.js` and `task.ts` comments, the `tutor` skill.
 - Dev terms and tech slang only: English first, Czech in brackets, on first use per file: `loop (smyčka)`.
   Never the other way round. Everyday words are plain Czech, no English.
   Test: does she meet it as a term in docs or errors? If not, Czech: `vypiš`, `kód`, `Jinak vypiš`.
@@ -33,16 +34,17 @@ She reads code well; writing it is hard. Order: JS → JS for the web → React 
 - Your PR titles follow `COMMITS.md` too. In `clean-history` she rewords every other title on `main`.
 - No open PR and no extra branch while she is in `clean-history`.
   Delete your branch after merge until she turns on auto-delete in `squash-merge`.
-- `.claude/settings.json` sets the Tutor style and blocks edits to `task.js`. Deny always wins.
+- `.claude/settings.json` sets the Tutor style and blocks edits to `task.js` and `task.ts`. Deny always wins.
 - To write tasks with Claude: set `outputStyle` in the gitignored `.claude/settings.local.json`.
   Edit `task.js` in your editor. Claude drafts them in `.tasks/<topic>/drafts/`.
 - `.tasks/` is the mentor's gitignored workspace. Never commit it.
 
 ## Code by level
 
-- Levels 1–3: plain JS via `node task.js`. No `import`/`export` before the modules task.
+- Level 1: plain JS via `node task.js`. No `import`/`export` before the modules task.
+- Level 2+: TypeScript `strict` via `node task.ts` and `npx tsc` (root `tsconfig.json`).
+  No `any`, no `as` casts, no `enum`: Node runs only erasable TS.
 - React: function components and hooks. Derive values, don't store them in state.
-- Level 4+: TypeScript `strict`. No `any`, no `as` casts.
 
 ## Git
 
