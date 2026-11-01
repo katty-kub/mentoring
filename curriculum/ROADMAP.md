@@ -20,6 +20,7 @@ Každý task má svou branch a svůj pull request (žádost o sloučení):
 5. `00-onboarding/05-review-fix`
 6. `00-onboarding/06-when-git-says-no`
 7. Napiš `00-onboarding/SUMMARY.md` (v PR tasku 06): tvůj tahák. Tutor tě provede.
+8. `00-onboarding/07-fix-conflict`
 
 Zbytek gitu přijde později: [Po mentoringu](#po-mentoringu-onboarding-extended-volitelné).
 

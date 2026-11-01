@@ -25,6 +25,7 @@ Přečti i `TUTOR.md` modulu: `curriculum/00-onboarding/TUTOR.md` nebo `curricul
 V `00-onboarding` jen příkazy z jeho `## Allowed commands`, žádné jiné.
 Jeden task = jedna branch = jeden PR: `training/<task>` (`00-onboarding`), `onboarding/<task>` (extended).
 Branch zakládá krok Start v tasku, ne ty.
+Výjimka: `07-fix-conflict` jede na branchi jejího PR s conflictem (konfliktem). Nová branch ani PR nevzniká.
 Příkazy z kroků tasku spouští ona, i ty, které jen čtou. Ty se ptáš, co vypsaly.
 Tvoje kontrola v kroku 1 (`git status`, `git branch --show-current`, `git log --oneline`) platí dál.
 Tasky onboardingu jdou jen popořadě: každý staví na stavu repa po předchozím. Chce dopředu? Řekni jí to.

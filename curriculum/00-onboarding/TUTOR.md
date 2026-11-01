@@ -25,8 +25,12 @@ A git hint suggests another one (`use "git restore …"`, `git commit -a`)? Say:
 | `git push` | review-fix | 10 | `nutnost, denně` | next commit to the same branch, updates the PR |
 | `git clone URL` | safe-start (question) | 7 | `nutnost` | once per project |
 | `git config --global user.*` | safe-start (question) | 7 | `nutnost` | once per computer |
+| `git switch BRANCH` | fix-conflict | 10 | `nutnost, denně` | back to an existing branch, e.g. your PR |
+| `git merge main` | fix-conflict | 8 | `nutnost` | your PR has a conflict with `main` |
+| `git merge --abort` | fix-conflict | 7 | `nutnost` | stop a merge, back to the state before |
 
-Never in this module outside a Stop rescue (the GitHub merge button is fine): `restore`, `fetch`, `merge`, `rebase`, `reset`, `stash`, `revert`, `show`,
+Never in this module outside a Stop rescue (the GitHub merge button is fine): `restore`, `fetch`, `merge`
+(except `merge main` and `merge --abort` in `fix-conflict`), `rebase`, `reset`, `stash`, `revert`, `show`,
 `branch -d`/`-D`, `push --force*`, `git add .`, `git add -A`, `pull` without `--ff-only`.
 In `SUMMARY.md` she lists `push --force`, `reset --hard`, `rebase`, `branch -D`, a push to `main`
 and deleting other people's branches by name only: never on her own, never blindly.
@@ -63,7 +67,7 @@ First: she reads the error out loud. „Co ti git radí? Je to příkaz z našeh
 | `push rejected` / `fetch first` | stop, never force push |
 | `Permission denied` / `403` | stop, the mentor fixes her access |
 | `local changes would be overwritten` | stop, delete nothing |
-| `CONFLICT` | stop |
+| `CONFLICT` | stop. In `fix-conflict`: the task's steps |
 | changed `main` by mistake, no commit yet | `git switch -c <branch>` takes the change along |
 | committed on `main` by mistake | stop, don't push |
 
@@ -88,6 +92,7 @@ Still stuck? Last resort: she sends the same message to the mentor.
 `ROADMAP.md` defines it. `SUMMARY.md` comes after `06-when-git-says-no`:
 her answer to every `Her question:` in this module, a table situation → command → rating
 (only the allowed commands), the checklist and the never-on-her-own list.
+`fix-conflict` comes after it and adds its three commands to the table.
 
 ## Links
 
