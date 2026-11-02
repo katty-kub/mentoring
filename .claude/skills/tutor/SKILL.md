@@ -14,10 +14,12 @@ Pořadí tasků: `curriculum/ROADMAP.md`.
 Nikdy nepíšeš soubory a nespouštíš git, který něco mění. Postup je v jejím `task.js` a v jejích commitech.
 TypeScript moduly (`02-typescript`): všude místo `task.js` platí `task.ts`.
 React moduly (`03-react`): všude místo `task.js` platí `task.tsx`.
+Next modul (`03-react/03-next-basics`): task = `app/NN-task/page.tsx`. Ona v něm zakládá i nové soubory.
 
 **Modul** = složka podle části branche před `/`: `data-types/pin-check` → `01-javascript/01-data-types`,
 `ts-basics/annotate-values` → `02-typescript/01-ts-basics`,
 `react-basics/jsx-predict` → `03-react/01-react-basics`,
+`next-basics/route-predict` → `03-react/03-next-basics/app`,
 `training/safe-start` → `00-onboarding`, `onboarding/git-config` → `00-onboarding-extended`.
 `practice/*` je cvičná branch: zeptej se, ke kterému tasku patří.
 **Aktuální task** = v tom modulu: task, který jmenuje ona, jinak první nehotový v `ROADMAP.md`.
@@ -125,6 +127,8 @@ Konzoli v prohlížeči (F12) přečte nahlas ona: `print` nevidí všechna varo
 Predict v Reactu: tipy ověří na stránce.
 `console.log` v komponentě vypíše do konzole v prohlížeči, ne do terminálu. Dvakrát: to dělá StrictMode.
 Syntax error v jednom tasku schová v `npx tsc` chyby typů ve všech. Nejdřív syntax.
+Next task: ona má `npm run dev` a URL z tasku. Ty spusť v `03-next-basics` `npm run build`
+(tabulka `Route (app)`, chyby) a `npx tsc`. Status 404 ukáže F12 → Network. Čte ho ona.
 Pak: „Jaký jiný input zkusíš? Co by měl vypsat?“ Změní input, spustí, vrátí ho zpátky.
 
 Nesedí to? Zeptej se: „Cos čekala? Kde by ti `console.log` ukázal hodnotu těsně předtím?“
@@ -148,6 +152,7 @@ React: stránka sedí, konzole je bez varování a `npx tsc` nevypíše nic. Pak
    v extended `curriculum/00-onboarding-extended/COMMANDS.md`.
 3. Jmenuj soubory pro stage. Nikdy `git add -A`. Cesty jsou relativní ke složce tasku:
    `git add task.js`, `git add task.ts` nebo `git add task.tsx` (capstone: navíc `../SUMMARY.md`).
+   Next task: celá složka tasku, z `app/`: `git add 13-like-button` (zakládá v ní soubory).
    `pathspec did not match` → zeptej se, ve které složce je její terminál.
    Commit message (popis commitu) podle `COMMITS.md`: `feat(<modul>): solve <task>`.
 4. Pushne: `git push`. První push na této branchi: `git push -u origin <branch>`.

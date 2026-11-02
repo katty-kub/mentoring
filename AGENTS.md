@@ -11,6 +11,8 @@ She reads code well; writing it is hard. Order: JS → TypeScript → React (TS)
   `//` comments ≤ 100 chars. Runs without error from day one.
 - `task.ts`: same rules. `npx tsc` is clean from day one too: a type error appears only after her change.
 - `task.tsx`: same rules as `task.ts`. Its last component is `export default function Task()`. She never changes it.
+- Next task: `app/NN-task/page.tsx`, same rules. `npm run build` passes from day one.
+  A server/client error appears only after her change: Modify, never Fix-the-bug.
 - `TUTOR.md`: hints for the tutor, never the answer.
 - Docs: short imperative sentences. Each rule in one file; link, don't repeat.
 
@@ -35,7 +37,7 @@ She reads code well; writing it is hard. Order: JS → TypeScript → React (TS)
 - Your PR titles follow `COMMITS.md` too. In `clean-history` she rewords every other title on `main`.
 - No open PR and no extra branch while she is in `clean-history`.
   Delete your branch after merge until she turns on auto-delete in `squash-merge`.
-- `.claude/settings.json` sets the Tutor style and blocks edits to `task.js`, `task.ts` and `task.tsx`. Deny always wins.
+- `.claude/settings.json` sets the Tutor style and blocks edits to `task.js`, `task.ts`, `task.tsx` and Next `app/`. Deny always wins.
 - To write tasks with Claude: set `outputStyle` in the gitignored `.claude/settings.local.json`.
   Edit `task.js` in your editor. Claude drafts them in `.tasks/<topic>/drafts/`.
 - `.tasks/` is the mentor's gitignored workspace. Never commit it.
@@ -48,6 +50,8 @@ She reads code well; writing it is hard. Order: JS → TypeScript → React (TS)
 - Level 3 React: one Vite app in `curriculum/03-react`, own `package.json` and `tsconfig.json`.
   There: `npm run dev`, `npx tsc`, `npm run print`. `import`/`export` lines come ready in the task.
   Function components. Hooks start in module 02. Derive values, don't store them in state.
+- Level 3 Next (`03-next-basics`): own Next app, own `package.json`. One task = one route folder.
+  There: `npm run dev`, `npm run build`, `npx tsc`. Each task shows the import lines she needs.
 
 ## Git
 
