@@ -1,4 +1,4 @@
-// Predict (předpověz): je komponenta server component, nebo client component ("use client")?
+// Predict (předpověz): server component (na serveru), nebo client component (i v prohlížeči)?
 // Napiš tip a proč. Pak to ověř tady, v části „When to use Server and Client Components“:
 // https://nextjs.org/docs/app/getting-started/server-and-client-components
 //

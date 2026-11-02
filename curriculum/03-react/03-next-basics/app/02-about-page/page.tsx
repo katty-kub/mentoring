@@ -6,4 +6,4 @@ export default function Page() {
 
 // /02-about-page/menu má ukázat: Menu
 // /02-about-page/about má ukázat: O nás
-// npm run build má v tabulce Route (app) ukázat obě URL.
+// npm run build má v tabulce Route (app) ukázat obě URL (adresy).

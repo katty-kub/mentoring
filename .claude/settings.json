@@ -8,6 +8,8 @@
       "Write(curriculum/**/task.ts)",
       "Edit(curriculum/**/task.tsx)",
       "Write(curriculum/**/task.tsx)",
+      "Edit(curriculum/03-react/03-next-basics/app/**)",
+      "Write(curriculum/03-react/03-next-basics/app/**)",
       "Edit(curriculum/**/SUMMARY.md)",
       "Write(curriculum/**/SUMMARY.md)",
       "Bash(git add*)",

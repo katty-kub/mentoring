@@ -1,4 +1,4 @@
-// Predict (předpověz): které nadpisy z layoutů uvidíš na každé URL? Tip za každý řádek. Pak otevři.
+// Predict (předpověz): které nadpisy z layouts (rámů stránek) uvidíš na každé URL? Tip, pak otevři.
 //
 // Soubory v app/09-layout-predict:
 //   layout.tsx          ukáže KAVÁRNA

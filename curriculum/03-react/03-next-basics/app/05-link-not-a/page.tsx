@@ -1,4 +1,4 @@
-// Bug report (hlášení chyby): klikni na Líbí pár krát, pak na Menu. Počítadlo spadne na 0.
+// Bug report (hlášení chyby): klikni na Líbí párkrát, pak na Menu. Počítadlo spadne na 0.
 // Má zůstat. Navigace (odkazy) je v layout.tsx.
 // import Link from "next/link";
 

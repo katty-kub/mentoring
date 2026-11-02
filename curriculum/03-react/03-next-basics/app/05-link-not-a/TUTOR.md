@@ -10,7 +10,7 @@ Her question: "What is the difference between `<Link>` and `<a>`?"
 
 ## Typical mistakes
 
-- Edits `page.tsx` instead of `layout.tsx`. Ask: where are the links?
+- Asks what `layout.tsx` is. Ask: which part stays the same on both pages? Layouts return in layout-predict.
 - Imports `Link` but keeps `<a>`. Ask her to click and watch the counter.
 - Changes one link only. Ask her to go Menu → Domů too.
 - Moves the counter into the page. Ask: does the bug go away, or the counter?

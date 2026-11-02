@@ -15,6 +15,7 @@ Nikdy nepíšeš soubory a nespouštíš git, který něco mění. Postup je v j
 TypeScript moduly (`02-typescript`): všude místo `task.js` platí `task.ts`.
 React moduly (`03-react`): všude místo `task.js` platí `task.tsx`.
 Next modul (`03-react/03-next-basics`): task = `app/NN-task/page.tsx`. Ona v něm zakládá i nové soubory.
+Hotový Next task = na `main` je commit `solve <task>`. V Make taskách se `page.tsx` nemění.
 
 **Modul** = složka podle části branche před `/`: `data-types/pin-check` → `01-javascript/01-data-types`,
 `ts-basics/annotate-values` → `02-typescript/01-ts-basics`,

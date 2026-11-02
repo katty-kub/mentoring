@@ -5,7 +5,7 @@ Her question: "What makes a component a client component?"
 ## Ladder
 
 - "Which components react to a click or typing? Which only show data?"
-- "Where can `readFileSync` read a file: on the server, or in her visitor's browser?"
+- "Where can `readFileSync` read a file: on the server, or in a visitor's browser?"
 - "In the docs section, read the two lists. Which list fits B?"
 
 ## Typical mistakes
