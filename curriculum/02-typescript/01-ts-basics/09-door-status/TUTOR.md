@@ -20,7 +20,7 @@ Her question: "What is a literal type, and how does it catch typos?"
 
 ## Tips
 
-- Teams use literal unions for states: `"loading" | "done" | "error"`. You'll meet them in React.
+- Teams use literal unions for states: `"loading" | "done" | "error"`.
 
 ## Links
 
