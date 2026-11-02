@@ -8,5 +8,6 @@
     "erasableSyntaxOnly": true,
     "types": ["node"]
   },
-  "include": ["curriculum/**/*.ts"]
+  "include": ["curriculum/**/*.ts"],
+  "exclude": ["curriculum/03-react/**"]
 }

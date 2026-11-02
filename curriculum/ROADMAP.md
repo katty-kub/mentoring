@@ -3,6 +3,8 @@
 Jeden task (úkol) po druhém. Pořadí je jen návrh: můžeš přeskočit dopředu nebo se vrátit.
 Task je hotový, když je v commitu a `node task.js` vypíše, co říká jeho comment `má vypsat`.
 TypeScript task (`task.ts`): `node task.ts` vypíše `má vypsat` a `npx tsc` nevypíše nic.
+React task (`task.tsx`): stránka ukáže `stránka má ukázat`, console (konzole) v browseru (prohlížeči)
+je bez varování (F12) a `npx tsc` nevypíše nic.
 Predict (předpověz) tasky `má vypsat` nemají: tam musí mít každý řádek tvůj tip.
 Git tasky v onboardingu ho nemají taky. Hotovo: odpovědi jsou v commitu
 a příkaz z řádku `Hotovo, když` ukáže, co má.
@@ -28,7 +30,7 @@ Zbytek gitu přijde později: [Po mentoringu](#po-mentoringu-onboarding-extended
 
 ### 01 Data types (datové typy)
 
-Tady přijde tvůj první `if` a tvůj první loop (smyčka). Moduly 02 a 03 jdou víc do hloubky.
+Tady přijde tvůj první `if` a tvůj první loop (smyčka).
 
 Jedna value (hodnota), bez loopu:
 
@@ -99,19 +101,49 @@ Všechno dohromady:
 12. `02-typescript/01-ts-basics/12-capstone`
 13. Napiš `02-typescript/01-ts-basics/SUMMARY.md`: svůj tahák.
 
+## Level 3: React
+
+React = library (knihovna) na stránky z components (komponent). Běží v browseru.
+Jednou: `cd curriculum/03-react`, pak `npm install`. V tasku pak `npm run dev`:
+otevři adresu z terminálu a klikni na task. Po uložení se stránka obnoví sama.
+`npx tsc` spouštěj taky v `03-react` nebo ve složce tasku.
+
+### 01 React basics (základy Reactu)
+
+JSX a components:
+
+1. `03-react/01-react-basics/01-jsx-predict`
+2. `03-react/01-react-basics/02-missing-braces`
+3. `03-react/01-react-basics/03-first-component`
+4. `03-react/01-react-basics/04-split-component`
+
+Props (vstupy komponenty):
+
+5. `03-react/01-react-basics/05-greeting-prop`
+6. `03-react/01-react-basics/06-price-tag`
+7. `03-react/01-react-basics/07-price-as-text`
+8. `03-react/01-react-basics/08-optional-prop`
+9. `03-react/01-react-basics/09-card-children`
+
+Conditions (podmínky):
+
+10. `03-react/01-react-basics/10-sold-out`
+11. `03-react/01-react-basics/11-zero-on-page`
+
+Lists (seznamy):
+
+12. `03-react/01-react-basics/12-map-predict`
+13. `03-react/01-react-basics/13-render-list`
+14. `03-react/01-react-basics/14-duplicate-key`
+
+Všechno dohromady:
+
+15. `03-react/01-react-basics/15-capstone`
+16. Napiš `03-react/01-react-basics/SUMMARY.md`: svůj tahák.
+
 ## Co přijde dál
 
-Tvůj mentor je připravuje.
-
-| Level | Moduly |
-|---|---|
-| 1 JavaScript | 02 conditions (podmínky) · 03 loops (smyčky) · 04 functions (funkce) · 05 arrays (pole) · 06 objects (objekty) · 07 scope & closures (rozsah platnosti a uzávěry) · 08 errors & debugging (chyby a hledání chyb) |
-| 2 TypeScript | další moduly po 01 TS basics |
-| 3 Web v TypeScriptu | 01 DOM (stránka jako strom) · 02 events (události) · 03 modules (moduly) · 04 async & fetch (asynchronní kód a stahování dat) · 05 browser debugger (ladění v prohlížeči) |
-| 4 React s TypeScriptem | 01 components (komponenty) · 02 props (vstupy komponenty) · 03 state (stav) · 04 effects (efekty) · 05 forms (formuláře) · 06 lists (seznamy) |
-| 5 Node.js + Express | malý skutečný projekt v TypeScriptu, jako v opravdové práci |
-
-Od modulu 04 (functions) pracuj nejdřív **sama**. Tutora zavolej na review (kontrolu), nebo když jsi 20 minut zaseklá.
+Další tasky připravuje tvůj mentor.
 
 ## Po mentoringu: Onboarding extended (volitelné)
 
@@ -170,8 +202,7 @@ Každý modul vede od čtení kódu k tomu, že ho napíšeš sama.
 Docs (dokumentace) jsou anglicky. Pomůže ti překladač v prohlížeči.
 
 - JavaScript: [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) · [javascript.info](https://javascript.info)
-- React: [react.dev/learn](https://react.dev/learn)
 - TypeScript: [the TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
-- Node.js: [nodejs.org/learn](https://nodejs.org/en/learn) · Express: [the Express guide](https://expressjs.com/en/guide/routing.html)
+- React: [react.dev/learn](https://react.dev/learn)
 - Git: [Pro Git book](https://git-scm.com/book/en/v2) · [GitHub: about pull requests](https://docs.github.com/en/pull-requests)
 - Commit messages (popisy commitů): [COMMITS.md](../COMMITS.md)
