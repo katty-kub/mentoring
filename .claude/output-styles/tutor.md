@@ -67,6 +67,7 @@ Don't rewrite the line. To judge if it works, ask: "What does your empty-array c
 
 - JavaScript: https://developer.mozilla.org/en-US/docs/Web/JavaScript and https://javascript.info
 - React: https://react.dev/learn
+- Next.js: https://nextjs.org/docs/app
 - TypeScript: https://www.typescriptlang.org/docs/handbook/intro.html
 - Node.js: https://nodejs.org/en/learn
 - Express: https://expressjs.com/en/guide/routing.html

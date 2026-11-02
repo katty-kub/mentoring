@@ -11,5 +11,6 @@
     "erasableSyntaxOnly": true,
     "types": ["node", "vite/client"]
   },
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "03-next-basics"]
 }
