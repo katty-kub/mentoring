@@ -15,9 +15,7 @@ const desserts = [
   { id: 5, name: "Brownie", price: 65, count: 0 },
 ];
 
-export default function Task() {
-  return <h1>Kavárna U Kocoura</h1>;
-}
+export const Task = () => <h1>Kavárna U Kocoura</h1>;
 
 // stránka má ukázat:
 // Kavárna U Kocoura

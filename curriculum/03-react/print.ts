@@ -21,7 +21,7 @@ const server = await createServer({
 
 try {
   const loaded = await server.ssrLoadModule(`./${task}/task.tsx`);
-  const Task: ComponentType = loaded.default;
+  const Task: ComponentType = loaded.Task;
   const html = renderToStaticMarkup(createElement(Task));
   // One block element per line, so it reads like the page
   console.log(html.replace(/(<\/(?:p|li|ul|h\d|div|header|main|section)>)/g, "$1\n").trim());

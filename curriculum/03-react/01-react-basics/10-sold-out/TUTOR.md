@@ -6,14 +6,16 @@ Her question: "How do you show one thing or another in JSX?"
 
 - "Say it in Czech first: when is it Vyprodáno, when the count?"
 - "Can you write `if` inside `{}`? What did `{}` accept in jsx-predict?"
-- "Where can you write a normal `if` in a component?"
+- "`Stock` gives back `( … )` straight away. Where could a normal `if` go?"
+- "In optional-prop, `Avatar` had `{ … }` after `=>`. What did it do before `return`?"
 
 ## Typical mistakes
 
 - Puts `if` inside JSX braces. Read the error with her: `{}` takes an expression.
+- Puts `if` inside `( … )` after `=>`. `npx tsc`: `Expression expected`. Ask: where did `Avatar` keep `const circle`?
 - `{count === 0 && "Vyprodáno"}` alone. Page shows "Vyprodáno 0 ks". Ask what shows when.
 - Uses `count == 0`. Ask: what did you learn about `===` in data-types?
-- `if` with an early `return` is a fine answer. So is `? :`. Ask her why she picked hers.
+- `{ }` body with `if` and two `return`s is a fine answer. So is `? :`. Ask her why she picked hers.
 
 ## What if
 
@@ -23,7 +25,7 @@ Her question: "How do you show one thing or another in JSX?"
 ## Tips
 
 - In JSX: `a ? b : c` for one or the other, `a && b` for something or nothing.
-- Above the `return`, plain `if` works as always. Pick what reads best.
+- With a `{ }` body after `=>`, plain `if` goes above `return`. Pick what reads best.
 
 ## Links
 
