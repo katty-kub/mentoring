@@ -13,17 +13,15 @@ const name = "eva";
 const price = 59;
 const count = 0;
 
-export default function Task() {
-  return (
-    <div>
-      <p>1: {price * 2} Kč</p>
-      <p>2: {name.toUpperCase()}</p>
-      <p>3: {"Ahoj, " + name}</p>
-      <p>4: {true}</p>
-      <p>5: {null}</p>
-      <p>6: {count}</p>
-      <p>7: {count > 0}</p>
-      <p>8: {[1, 2, 3]}</p>
-    </div>
-  );
-}
+export const Task = () => (
+  <div>
+    <p>1: {price * 2} Kč</p>
+    <p>2: {name.toUpperCase()}</p>
+    <p>3: {"Ahoj, " + name}</p>
+    <p>4: {true}</p>
+    <p>5: {null}</p>
+    <p>6: {count}</p>
+    <p>7: {count > 0}</p>
+    <p>8: {[1, 2, 3]}</p>
+  </div>
+);

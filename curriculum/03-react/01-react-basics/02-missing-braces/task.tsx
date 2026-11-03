@@ -4,14 +4,12 @@ const item = "Káva";
 const price = 59;
 const stock = 12;
 
-export default function Task() {
-  return (
-    <div>
-      <p>{item}: price Kč</p>
-      <p>Skladem: {"stock"} ks</p>
-    </div>
-  );
-}
+export const Task = () => (
+  <div>
+    <p>{item}: price Kč</p>
+    <p>Skladem: {"stock"} ks</p>
+  </div>
+);
 
 // stránka má ukázat:
 // Káva: 59 Kč

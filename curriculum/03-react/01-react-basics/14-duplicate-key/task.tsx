@@ -7,17 +7,15 @@ const orders = [
   { id: 103, name: "Káva", table: 5 },
 ];
 
-export default function Task() {
-  return (
-    <ul>
-      {orders.map((order) => (
-        <li key={order.name}>
-          {order.name}, stůl {order.table}
-        </li>
-      ))}
-    </ul>
-  );
-}
+export const Task = () => (
+  <ul>
+    {orders.map((order) => (
+      <li key={order.name}>
+        {order.name}, stůl {order.table}
+      </li>
+    ))}
+  </ul>
+);
 
 // stránka má ukázat (stejně jako teď), console bez varování:
 // Káva, stůl 3

@@ -39,3 +39,4 @@ Je to stará konvence, kterou už nejde změnit,
 parseInt k tomu přistupuje jinak.
  Hledá aspoň jednu číslici, a
   když žádnou nenajde, vrátí NaN
+*/

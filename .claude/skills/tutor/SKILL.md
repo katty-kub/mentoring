@@ -14,13 +14,14 @@ Pořadí tasků: `curriculum/ROADMAP.md`.
 Nikdy nepíšeš soubory a nespouštíš git, který něco mění. Postup je v jejím `task.js` a v jejích commitech.
 TypeScript moduly (`02-typescript`): všude místo `task.js` platí `task.ts`.
 React moduly (`03-react`): všude místo `task.js` platí `task.tsx`.
-Next modul (`03-react/03-next-basics`): task = `app/NN-task/page.tsx`. Ona v něm zakládá i nové soubory.
+Next modul (`03-react/03-next-basics`): task = `src/app/NN-task/page.tsx`. Ona v něm zakládá i nové soubory.
 Hotový Next task = na `main` je commit `solve <task>`. V Make taskách se `page.tsx` nemění.
 
 **Modul** = složka podle části branche před `/`: `data-types/pin-check` → `01-javascript/01-data-types`,
+`modern-js/arrow-function` → `01-javascript/02-modern-js`,
 `ts-basics/annotate-values` → `02-typescript/01-ts-basics`,
 `react-basics/jsx-predict` → `03-react/01-react-basics`,
-`next-basics/route-predict` → `03-react/03-next-basics/app`,
+`next-basics/project-map` → `03-react/03-next-basics/src/app`,
 `training/safe-start` → `00-onboarding`, `onboarding/git-config` → `00-onboarding-extended`.
 `practice/*` je cvičná branch: zeptej se, ke kterému tasku patří.
 **Aktuální task** = v tom modulu: task, který jmenuje ona, jinak první nehotový v `ROADMAP.md`.
@@ -145,15 +146,17 @@ a typy jsou v jejím kódu tam, kde je zadání chce. Výstup se často nezměn�
 React: stránka sedí, konzole je bez varování a `npx tsc` nevypíše nic. Pak:
 
 1. Řekni jí dva nebo tři `## Tips` z `TUTOR.md`, česky.
-2. Capstone: teď napíše `SUMMARY.md` modulu, na této branchi.
+2. Capstone těsně před řádkem „Napiš `SUMMARY.md`“ v `ROADMAP.md`: teď napíše `SUMMARY.md` modulu,
+   na této branchi. Jiný capstone v modulu (např. `15-capstone`) `SUMMARY.md` ještě nespouští.
    Vlastními slovy odpoví na každou `Her question:` z `TUTOR.md` souborů modulu. Polož jí je česky.
    Onboarding: platí i tady, po `06-when-git-says-no` a po `16-revert-merge`.
    Navíc tabulka: situace → příkaz → hodnocení (v extended i → co se ztratí).
    Hodnocení: `curriculum/00-onboarding/TUTOR.md` → Allowed commands,
    v extended `curriculum/00-onboarding-extended/COMMANDS.md`.
 3. Jmenuj soubory pro stage. Nikdy `git add -A`. Cesty jsou relativní ke složce tasku:
-   `git add task.js`, `git add task.ts` nebo `git add task.tsx` (capstone: navíc `../SUMMARY.md`).
-   Next task: celá složka tasku, z `app/`: `git add 13-like-button` (zakládá v ní soubory).
+   `git add task.js`, `git add task.ts` nebo `git add task.tsx` (capstone z bodu 2: navíc `../SUMMARY.md`).
+   Next task: celá složka tasku, z `03-next-basics` (tam běží `npm run dev`):
+   `git add src/app/16-like-button` (zakládá v ní soubory). Capstone: navíc `SUMMARY.md`.
    `pathspec did not match` → zeptej se, ve které složce je její terminál.
    Commit message (popis commitu) podle `COMMITS.md`: `feat(<modul>): solve <task>`.
 4. Pushne: `git push`. První push na této branchi: `git push -u origin <branch>`.

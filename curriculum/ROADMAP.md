@@ -5,6 +5,7 @@ Task je hotový, když je v commitu a `node task.js` vypíše, co říká jeho c
 TypeScript task (`task.ts`): `node task.ts` vypíše `má vypsat` a `npx tsc` nevypíše nic.
 React task (`task.tsx`): stránka ukáže `stránka má ukázat`, console (konzole) v browseru (prohlížeči)
 je bez varování (F12) a `npx tsc` nevypíše nic.
+Next task: stránky ukážou, co říkají jejich comments, a `npm run build` projde bez chyby.
 Predict (předpověz) tasky `má vypsat` nemají: tam musí mít každý řádek tvůj tip.
 Git tasky v onboardingu ho nemají taky. Hotovo: odpovědi jsou v commitu
 a příkaz z řádku `Hotovo, když` ukáže, co má.
@@ -64,6 +65,30 @@ Všechno dohromady:
 
 23. `01-javascript/01-data-types/23-capstone`
 24. Napiš `01-javascript/01-data-types/SUMMARY.md`: svůj tahák.
+
+### 02 Modern JS (moderní JavaScript)
+
+Arrow functions (šipkové funkce):
+
+1. `01-javascript/02-modern-js/01-arrow-function`
+
+Spread (rozbalení) `...`:
+
+2. `01-javascript/02-modern-js/02-spread-predict`
+3. `01-javascript/02-modern-js/03-merge-lists`
+4. `01-javascript/02-modern-js/04-copy-bug`
+5. `01-javascript/02-modern-js/05-object-spread-predict`
+6. `01-javascript/02-modern-js/06-update-object`
+
+Destructuring (rozložení):
+
+7. `01-javascript/02-modern-js/07-destructuring-predict`
+8. `01-javascript/02-modern-js/08-destructure-params`
+
+Všechno dohromady:
+
+9. `01-javascript/02-modern-js/09-capstone`
+10. Napiš `01-javascript/02-modern-js/SUMMARY.md`: svůj tahák.
 
 ## Level 2: TypeScript
 
@@ -139,7 +164,60 @@ Lists (seznamy):
 Všechno dohromady:
 
 15. `03-react/01-react-basics/15-capstone`
-16. Napiš `03-react/01-react-basics/SUMMARY.md`: svůj tahák.
+
+Procvičení: DevNotes notebooks (sešity):
+
+16. `03-react/01-react-basics/16-notebook-list`
+17. `03-react/01-react-basics/17-notebook-card`
+18. `03-react/01-react-basics/18-notebook-type`
+19. `03-react/01-react-basics/19-missing-count`
+20. `03-react/01-react-basics/20-empty-notebook`
+21. `03-react/01-react-basics/21-dashed-card`
+22. `03-react/01-react-basics/22-notebook-description`
+23. `03-react/01-react-basics/23-cluster-dots`
+24. `03-react/01-react-basics/24-cluster-count`
+25. `03-react/01-react-basics/25-notebooks-capstone`
+26. Napiš `03-react/01-react-basics/SUMMARY.md`: svůj tahák.
+
+### 03 Next basics (základy Next.js)
+
+Začni až po modulu 02 (hooks). Do té doby ti ho tutor sám nenabídne.
+Next = framework (rámec) nad Reactem: ze složek dělá stránky. Má vlastní aplikaci.
+Jednou: `cd curriculum/03-react/03-next-basics`, pak `npm install`. V tasku pak `npm run dev`:
+otevři adresu z terminálu a klikni na task. `npx tsc` a `npm run build` spouštěj taky tam.
+
+Routes (cesty) a stránky:
+
+1. `03-react/03-next-basics/src/app/01-project-map`
+2. `03-react/03-next-basics/src/app/02-route-predict`
+3. `03-react/03-next-basics/src/app/03-about-page`
+4. `03-react/03-next-basics/src/app/04-not-a-page`
+5. `03-react/03-next-basics/src/app/05-nested-route`
+
+Links (odkazy) a URL (adresa) s parametrem:
+
+6. `03-react/03-next-basics/src/app/06-link-not-a`
+7. `03-react/03-next-basics/src/app/07-dynamic-predict`
+8. `03-react/03-next-basics/src/app/08-product-detail`
+9. `03-react/03-next-basics/src/app/09-not-found`
+
+Layouts (rámy stránek), název v záložce a obrázky:
+
+10. `03-react/03-next-basics/src/app/10-layout-predict`
+11. `03-react/03-next-basics/src/app/11-shared-header`
+12. `03-react/03-next-basics/src/app/12-page-title`
+13. `03-react/03-next-basics/src/app/13-logo-image`
+
+Server a client components:
+
+14. `03-react/03-next-basics/src/app/14-server-or-client`
+15. `03-react/03-next-basics/src/app/15-where-is-the-log`
+16. `03-react/03-next-basics/src/app/16-like-button`
+
+Všechno dohromady:
+
+17. `03-react/03-next-basics/src/app/17-capstone`
+18. Napiš `03-react/03-next-basics/SUMMARY.md`: svůj tahák.
 
 ## Co přijde dál
 

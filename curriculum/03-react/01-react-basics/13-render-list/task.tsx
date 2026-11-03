@@ -8,13 +8,11 @@ const products = [
   { id: 4, name: "Koláč", price: 79 },
 ];
 
-export default function Task() {
-  return (
-    <div>
-      <h2>Menu</h2>
-    </div>
-  );
-}
+export const Task = () => (
+  <div>
+    <h2>Menu</h2>
+  </div>
+);
 
 // stránka má ukázat:
 // Menu

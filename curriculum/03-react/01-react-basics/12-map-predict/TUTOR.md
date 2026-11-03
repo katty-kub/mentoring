@@ -1,6 +1,6 @@
 # Tutor: Map predict
 
-Her question: "What does `.map` do, and how do you read an arrow function `=>`?"
+Her question: "What does `.map` do with the arrow function you give it?"
 
 ## Ladder
 

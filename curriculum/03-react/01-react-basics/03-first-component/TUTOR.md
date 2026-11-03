@@ -11,6 +11,8 @@ Her question: "What is a component, and how do you use it?"
 
 - Names it `badge`. `npx tsc`: `Property 'badge' does not exist on type 'JSX.IntrinsicElements'`.
   Ask her to read it out loud. Lowercase tags are HTML tags for React.
+- Writes `() => { <strong>NEW</strong> }`. `npx tsc`: `'Badge' cannot be used as a JSX component`.
+  Ask her to read it out loud. Then: what does the example return?
 - Calls it as `{Badge()}`. It works, but ask: how does the example use it?
 - Writes `NEW` three times without a component. Ask: what if NEW must become NOVÉ tomorrow?
 - `Matcha latteNEW` without a space. Let her see it on the page, then ask why.
@@ -24,6 +26,7 @@ Her question: "What is a component, and how do you use it?"
 ## Tips
 
 - A component is a function that returns JSX. Its name starts with a capital letter.
+- `() => <p>Hi</p>` and `() => (…)` return the JSX. With `{ }` you write `return` yourself.
 - Write it once, use it many times, change it in one place.
 
 ## Links

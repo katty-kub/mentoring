@@ -11,7 +11,7 @@ Her question: "What are props, and how does a component read them?"
 ## Typical mistakes
 
 - Adds `name="Petr"` in `Task` but `Greeting` still shows Eva. Ask: where does `Greeting` read it?
-- Writes `function Greeting(name: string)`. `npx tsc`: `Type '{ name: string; }' is not assignable`.
+- Writes `const Greeting = (name: string) =>`. `npx tsc`: `Type '{ name: string; }' is not assignable`.
   Ask: what does React pass to the function, one text or one object?
 - No type on the props. Read the `npx tsc` error with her: implicit `any`.
 - Hard-codes two components `GreetingEva`, `GreetingPetr`. Ask: and for 100 people?
