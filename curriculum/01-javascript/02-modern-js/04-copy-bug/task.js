@@ -4,7 +4,7 @@
 
 const menu = ["coffee", "cake"];
 
-const guestCart = menu;
+const guestCart = [...menu];
 guestCart.push("tea");
 
 console.log(menu);
