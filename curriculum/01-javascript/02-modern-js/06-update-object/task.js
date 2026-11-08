@@ -2,10 +2,10 @@
 // { name: "tea", price: 45 } → { name: 'tea', price: 49 }
 
 const product = { name: "tea", price: 45 };
-
 // tvůj kód
+const newProduct = {...product, price: 49 }
 
-
+console.log(newProduct);
 console.log(product);
 
 // node task.js má vypsat:
