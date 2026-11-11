@@ -1,9 +1,9 @@
 // Napiš type (typ) za každou proměnnou: string, number nebo boolean.
 // let name = "Eva" → let name: string = "Eva"
 
-let city = "Brno";
-let temperature = 21;
-let isRaining = false;
+let city: string = "Brno";
+let temperature: number = 21;
+let isRaining: boolean = false;
 
 console.log(city, temperature, isRaining);
 
