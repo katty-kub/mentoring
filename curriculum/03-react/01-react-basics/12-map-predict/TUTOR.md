@@ -6,7 +6,7 @@ Her question: "What does `.map` do with the arrow function you give it?"
 
 - "Read the example line 0. What goes into `n` the first time? The second time?"
 - "Say `(price) => price * 2` in Czech: what goes in, what comes out?"
-- "In data-types you went through a list with a loop. What would your loop do with `prices`?"
+- "In array-methods map-predict you printed the same `map` with `console.log`. What did it give back?"
 
 ## Typical mistakes
 

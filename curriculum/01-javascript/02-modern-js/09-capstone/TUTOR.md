@@ -22,7 +22,7 @@ Her question: "How does a function give back a change without changing its input
 
 - Write markUndone too. How much code is the same?
 - Print the new todo as `Write SUMMARY: true`. Can you use destructuring for it?
-- Give markDone a list of two todos. What prints? (She meets `.map` in React: map-predict.)
+- Give markDone a list of two todos. What prints? (She meets `.map` in array-methods: map-predict.)
 
 ## Tips
 

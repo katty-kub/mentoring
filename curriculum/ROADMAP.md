@@ -90,6 +90,46 @@ Všechno dohromady:
 9. `01-javascript/02-modern-js/09-capstone`
 10. Napiš `01-javascript/02-modern-js/SUMMARY.md`: svůj tahák.
 
+### 03 Array methods (metody pole)
+
+Array (pole) je seznam hodnot: `[5, 2, 8]`. Method (metoda) je function (funkce), kterou array už umí.
+Tady loop (smyčku) nepíšeš: metodě předáš svou funkci a ona ji zavolá pro každou položku.
+
+Callback (funkce, kterou předáš jiné funkci):
+
+1. `01-javascript/03-array-methods/01-callback-predict`
+2. `01-javascript/03-array-methods/02-for-each`
+
+`map`: každou položku změň:
+
+3. `01-javascript/03-array-methods/03-map-predict`
+4. `01-javascript/03-array-methods/04-price-labels`
+5. `01-javascript/03-array-methods/05-missing-return`
+
+`filter`: některé položky vyber:
+
+6. `01-javascript/03-array-methods/06-filter-predict`
+7. `01-javascript/03-array-methods/07-only-cheap`
+8. `01-javascript/03-array-methods/08-map-or-filter`
+
+`find`: najdi jednu položku:
+
+9. `01-javascript/03-array-methods/09-find-predict`
+10. `01-javascript/03-array-methods/10-find-product`
+11. `01-javascript/03-array-methods/11-product-not-found`
+
+`some`, `every`, víc metod za sebou, `reduce`:
+
+12. `01-javascript/03-array-methods/12-some-every-predict`
+13. `01-javascript/03-array-methods/13-chain-predict`
+14. `01-javascript/03-array-methods/14-cheap-names`
+15. `01-javascript/03-array-methods/15-reduce-predict`
+
+Všechno dohromady:
+
+16. `01-javascript/03-array-methods/16-capstone`
+17. Napiš `01-javascript/03-array-methods/SUMMARY.md`: svůj tahák.
+
 ## Level 2: TypeScript
 
 TypeScript = JavaScript s types (typy). Najde chybu dřív, než kód spustíš.

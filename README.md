@@ -279,6 +279,8 @@ a dej si pauzu. Příště napiš **continue**. To je normální.
 | loop | smyčka, opakování |
 | condition | podmínka (`if`) |
 | function | funkce |
+| method | metoda: funkce, kterou hodnota už umí: `prices.map(…)` |
+| callback | funkce, kterou předáš jiné funkci. Ta ji zavolá sama |
 | bug | chyba v kódu |
 | edge case | okrajový případ |
 | branch | větev v gitu |
