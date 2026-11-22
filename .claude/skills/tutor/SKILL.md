@@ -22,6 +22,7 @@ Hotový Next task = na `main` je commit `solve <task>`. V Make taskách se `page
 `array-methods/callback-predict` → `01-javascript/03-array-methods`,
 `ts-basics/annotate-values` → `02-typescript/01-ts-basics`,
 `react-basics/jsx-predict` → `03-react/01-react-basics`,
+`react-state/click-log` → `03-react/02-react-state`,
 `next-basics/project-map` → `03-react/03-next-basics/src/app`,
 `training/safe-start` → `00-onboarding`, `onboarding/git-config` → `00-onboarding-extended`.
 `practice/*` je cvičná branch: zeptej se, ke kterému tasku patří.
@@ -127,6 +128,8 @@ Predict v TypeScriptu: tipy ověří najetím myší ve VS Code.
 React task: ona má `npm run dev` a stránku. Porovná ji s řádkem `stránka má ukázat`.
 Ty spusť ve složce tasku `npm run print` (HTML stránky) a `npx tsc`.
 Konzoli v prohlížeči (F12) přečte nahlas ona: `print` nevidí všechna varování.
+Task s řádkem `po …` (`02-react-state`): `print` ukáže jen první render, neumí klikat ani psát.
+Kliká a píše ona. Řekne ti, co stránka ukázala po každém kroku z řádků `po …`. Ty čteš její kód.
 Predict v Reactu: tipy ověří na stránce.
 `console.log` v komponentě vypíše do konzole v prohlížeči, ne do terminálu. Dvakrát: to dělá StrictMode.
 Syntax error v jednom tasku schová v `npx tsc` chyby typů ve všech. Nejdřív syntax.

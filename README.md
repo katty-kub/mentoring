@@ -273,6 +273,10 @@ a dej si pauzu. Příště napiš **continue**. To je normální.
 | children | co je mezi `<Card>` a `</Card>` |
 | render | vykreslit, ukázat na stránce |
 | key | jméno položky v seznamu: podle něj React pozná, která je která |
+| state | stav: co si komponenta pamatuje. Změna = React ukáže stránku znovu |
+| hook | funkce Reactu se jménem od `use`: `useState` |
+| event | událost: klik, psaní do pole |
+| event handler | funkce, kterou React zavolá při události: `onClick={…}` |
 | browser | prohlížeč |
 | console | konzole v prohlížeči (F12): chyby a varování |
 | array | pole, seznam hodnot `[5, 2, 8]` |
