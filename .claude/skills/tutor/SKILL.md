@@ -19,6 +19,7 @@ Hotový Next task = na `main` je commit `solve <task>`. V Make taskách se `page
 
 **Modul** = složka podle části branche před `/`: `data-types/pin-check` → `01-javascript/01-data-types`,
 `modern-js/arrow-function` → `01-javascript/02-modern-js`,
+`array-methods/callback-predict` → `01-javascript/03-array-methods`,
 `ts-basics/annotate-values` → `02-typescript/01-ts-basics`,
 `react-basics/jsx-predict` → `03-react/01-react-basics`,
 `next-basics/project-map` → `03-react/03-next-basics/src/app`,
