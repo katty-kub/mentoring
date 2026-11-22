@@ -5,6 +5,7 @@ Task je hotový, když je v commitu a `node task.js` vypíše, co říká jeho c
 TypeScript task (`task.ts`): `node task.ts` vypíše `má vypsat` a `npx tsc` nevypíše nic.
 React task (`task.tsx`): stránka ukáže `stránka má ukázat`, console (konzole) v browseru (prohlížeči)
 je bez varování (F12) a `npx tsc` nevypíše nic.
+React task s řádkem `po …` (`po kliku`, `po napsání`): udělej to na stránce. Má ukázat, co řádek říká.
 Next task: stránky ukážou, co říkají jejich comments, a `npm run build` projde bez chyby.
 Predict (předpověz) tasky `má vypsat` nemají: tam musí mít každý řádek tvůj tip.
 Git tasky v onboardingu ho nemají taky. Hotovo: odpovědi jsou v commitu
@@ -219,9 +220,47 @@ Procvičení: DevNotes notebooks (sešity):
 25. `03-react/01-react-basics/25-notebooks-capstone`
 26. Napiš `03-react/01-react-basics/SUMMARY.md`: svůj tahák.
 
+### 02 React state (stav komponenty)
+
+State (stav) je paměť komponenty: co si pamatuje mezi kliky. Když se změní, React stránku ukáže znovu.
+Klikáš a píšeš na stránce ty. `npm run print` ukáže jen stránku na začátku.
+
+Events (události) a první state:
+
+1. `03-react/02-react-state/01-click-log`
+2. `03-react/02-react-state/02-variable-predict`
+3. `03-react/02-react-state/03-first-state`
+4. `03-react/02-react-state/04-snapshot-predict`
+5. `03-react/02-react-state/05-show-note`
+6. `03-react/02-react-state/06-two-counters`
+
+Input (políčko pro text) a hodnoty, které jdou spočítat:
+
+7. `03-react/02-react-state/07-name-input`
+8. `03-react/02-react-state/08-frozen-input`
+9. `03-react/02-react-state/09-stale-length`
+10. `03-react/02-react-state/10-search-menu`
+
+Array (pole) a object (objekt) ve state:
+
+11. `03-react/02-react-state/11-add-item`
+12. `03-react/02-react-state/12-push-bug`
+13. `03-react/02-react-state/13-remove-item`
+14. `03-react/02-react-state/14-empty-cart`
+15. `03-react/02-react-state/15-toggle-done`
+
+State pro dvě komponenty:
+
+16. `03-react/02-react-state/16-shared-count`
+
+Všechno dohromady:
+
+17. `03-react/02-react-state/17-capstone`
+18. Napiš `03-react/02-react-state/SUMMARY.md`: svůj tahák.
+
 ### 03 Next basics (základy Next.js)
 
-Začni až po modulu 02 (hooks). Do té doby ti ho tutor sám nenabídne.
+Začni až po modulu 02 (React state). Do té doby ti ho tutor sám nenabídne.
 Next = framework (rámec) nad Reactem: ze složek dělá stránky. Má vlastní aplikaci.
 Jednou: `cd curriculum/03-react/03-next-basics`, pak `npm install`. V tasku pak `npm run dev`:
 otevři adresu z terminálu a klikni na task. `npx tsc` a `npm run build` spouštěj taky tam.
