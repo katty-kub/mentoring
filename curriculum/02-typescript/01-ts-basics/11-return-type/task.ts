@@ -5,17 +5,17 @@
 const double = (n: number) => {
   return n * 2;
 };
-// tip:
+// tip: number
 
 const isAdult = (age: number) => {
   return age >= 18;
 };
-// tip:
+// tip: boolean
 
 const greet = (name: string) => {
   return "Hi " + name;
 };
-// tip:
+// tip: string
 
 const cleanPhone = (phone: string) => {
   if (phone === "") {
@@ -23,6 +23,6 @@ const cleanPhone = (phone: string) => {
   }
   return phone.trim();
 };
-// tip:
+// tip: string | undefined
 
 console.log(double(2), isAdult(20), greet("Eva"), cleanPhone(""));
