@@ -2,7 +2,7 @@
 // Oprav to. A ať TypeScript takový překlep příště chytí sám.
 // status smí být jen "open" nebo "closed".
 
-let status = "opne";
+let status: "open" | "closed" = "open";
 
 if (status === "open") {
   console.log("door open");
