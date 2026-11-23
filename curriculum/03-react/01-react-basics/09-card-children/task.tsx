@@ -4,13 +4,22 @@ import type { ReactNode } from "react";
 // Dej do Card obě části stránky.
 // rámeček: <div style={{ border: "1px solid gray", padding: 8 }}>…</div>
 
+
+const Card  = ({ children }: {children: ReactNode}) => (
+  <div style={{ border: "1px solid gray", padding: 8 }}>
+    {children}
+  </div>
+)
+
 export const Task = () => (
   <div>
-    <h2>Novinky</h2>
-    <p>Dýňový koláč je zpět.</p>
-    <h2>Otevírací doba</h2>
-    <p>Po–Pá 8–18</p>
-    <p>So 9–14</p>
+    <Card>
+      <h2>Novinky</h2>
+      <p>Dýňový koláč je zpět.</p>
+      <Card>
+        <p>Jen do neděle!</p>
+      </Card>
+    </Card>
   </div>
 );
 
