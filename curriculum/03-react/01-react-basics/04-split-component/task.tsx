@@ -1,11 +1,15 @@
 // Task je dlouhý. Dej hlavičku stránky do vlastní component (komponenty) Header.
 
+const Header = () => (
+  <header>
+    <h1>Kavárna U Kocoura</h1>
+    <p>Otevřeno 8–18</p>
+  </header>
+);
+
 export const Task = () => (
   <div>
-    <header>
-      <h1>Kavárna U Kocoura</h1>
-      <p>Otevřeno 8–18</p>
-    </header>
+    <Header />
     <main>
       <h2>Dnes</h2>
       <p>Dýňový koláč</p>
