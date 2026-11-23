@@ -1,11 +1,14 @@
 // Napiš component (komponentu) Badge: ukáže štítek NEW. Dej ho ke každé novince.
 // const Hello = () => <p>Hello</p>; a pak <Hello />
 
+const Badge = () => <span>NEW</span>;
+
+
 export const Task = () => (
   <ul>
-    <li>Matcha latte</li>
-    <li>Dýňový koláč</li>
-    <li>Chai</li>
+    <li>Matcha latte <Badge /></li>
+    <li>Dýňový koláč <Badge /></li>
+    <li>Chai <Badge /></li>
   </ul>
 );
 
