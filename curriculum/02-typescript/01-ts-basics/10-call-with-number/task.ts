@@ -10,5 +10,7 @@ const rate = 1.21;
 
 // tvůj kód
 
+const total = addVat(Number(input), rate);
+console.log(total);
 
 // node task.ts má vypsat: 121
