@@ -1,7 +1,7 @@
 // Napiš component (komponentu) Badge: ukáže štítek NEW. Dej ho ke každé novince.
 // const Hello = () => <p>Hello</p>; a pak <Hello />
 
-const Badge = () => <span>NEW</span>;
+const Badge = () => <span style={{ color: "red"}}>NEW</span>;
 
 
 export const Task = () => (
