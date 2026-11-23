@@ -8,16 +8,16 @@
 //   next.config.ts
 //   package.json
 //
-// /01-project-map → tip:
-// /logo.svg → tip:
-// /public/logo.svg → tip:
-// /src/app/01-project-map/page.tsx → tip:
-// /package.json → tip:
+// /01-project-map → tip: stránka
+// /logo.svg → tip: obrázek
+// /public/logo.svg → tip: 404
+// /src/app/01-project-map/page.tsx → tip: 404 
+// /package.json → tip: 404 
 //
-// Ikona v záložce browseru (prohlížeče): ze kterého souboru je? → tip:
+// Ikona v záložce browseru (prohlížeče): ze kterého souboru je? → tip:  src/app/icon.svg
 //
-// Po npm install a npm run dev přibudou složky node_modules/ a .next/. Kdo je napsal? → tip:
-// Patří do commitu (uložení změn)? Ověř v git status a v .gitignore v root (kořeni) repa. → tip:
+// Po npm install a npm run dev přibudou složky node_modules/ a .next/. Kdo je napsal? → tip: node_modules/ npm (stažené balíčky), .next/ Next (vyrobil je při npm run dev). Já ne
+// Patří do commitu (uložení změn)? Ověř v git status a v .gitignore v root (kořeni) repa. → tip: tip: ne, jsou v .gitignore, git status je neukáže
 
 const Page = () => <h1>Task 01 project-map</h1>;
 
