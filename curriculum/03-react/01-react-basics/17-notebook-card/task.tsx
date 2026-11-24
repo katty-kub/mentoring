@@ -8,13 +8,26 @@ const notebooks = [
   { id: "frontend", name: "Frontend", notes: 0 },
 ];
 
+type NotebookCardProps = {
+  name: string;
+  notes: number;
+};
+
+const NotebookCard = ({ name, notes }: NotebookCardProps) => (
+  <li>
+    <h2>{name}</h2>
+    <p>Poznámky: {notes}</p>
+  </li>
+);
+
 export const Task = () => (
   <ul>
     {notebooks.map((notebook) => (
-      <li key={notebook.id}>
-        <h2>{notebook.name}</h2>
-        <p>Poznámky: {notebook.notes}</p>
-      </li>
+      <NotebookCard
+        key={notebook.id}
+        name={notebook.name}
+        notes={notebook.notes}
+      />
     ))}
   </ul>
 );

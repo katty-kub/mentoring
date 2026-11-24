@@ -1,13 +1,19 @@
 // Tvar notebooku (sešitu) je napsaný dvakrát. Ať je jen na jednom místě: type (typ) Notebook.
 
-const notebooks: { id: string; name: string; notes: number }[] = [
+type Notebook = {
+  id: string;
+  name: string;
+  notes: number;
+};
+
+const notebooks: Notebook[] = [
   { id: "starter", name: "Starter", notes: 12 },
   { id: "api", name: "API", notes: 7 },
   { id: "backend", name: "Backend", notes: 5 },
   { id: "frontend", name: "Frontend", notes: 0 },
 ];
 
-const NotebookCard = ({ notebook }: { notebook: { id: string; name: string; notes: number } }) => (
+const NotebookCard = ({ notebook }: { notebook: Notebook }) => (
   <li>
     <h2>{notebook.name}</h2>
     <p>Poznámky: {notebook.notes}</p>
