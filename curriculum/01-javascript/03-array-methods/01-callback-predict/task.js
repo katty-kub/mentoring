@@ -8,11 +8,11 @@ const twice = (action) => {
   action();
 };
 
-sayHi(); // tip:
-twice(sayHi); // tip:
-twice(() => console.log("bye")); // tip:
-console.log(typeof sayHi); // tip:
-console.log(typeof sayHi()); // tip:
-console.log(typeof twice); // tip:
+sayHi(); // tip: hi
+twice(sayHi); // tip: hi hi
+twice(() => console.log("bye")); // tip: bye bye
+console.log(typeof sayHi); // tip: function
+;console.log(typeof sayHi()) // tip: hi, undefined
+console.log(typeof twice); // tip: function
 
 // node task.js vypíše 9 řádků. Porovnej je se svými tipy.
