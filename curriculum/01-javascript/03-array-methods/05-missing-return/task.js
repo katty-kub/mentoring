@@ -3,9 +3,7 @@
 
 const prices = [49, 65, 45];
 
-const labels = prices.map((price) => {
-  `${price} CZK`;
-});
+const labels = prices.map((price) => `${price} CZK`);
 
 console.log(labels);
 
