@@ -11,6 +11,11 @@ const notebooks = [
 export const Task = () => (
   <div>
     <h2>Notebooks</h2>
+    <ul>
+      {notebooks.map((notebook) => (
+        <li key={notebook.id}>{notebook.name}</li>
+      ))}
+    </ul>
   </div>
 );
 
