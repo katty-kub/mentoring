@@ -11,6 +11,13 @@ const products = [
 export const Task = () => (
   <div>
     <h2>Menu</h2>
+    <ul>
+      {products.map((product) => (
+        <li key={product.id}>
+            {product.name}: {product.price} Kč
+        </li>
+      ))}
+    </ul>
   </div>
 );
 
